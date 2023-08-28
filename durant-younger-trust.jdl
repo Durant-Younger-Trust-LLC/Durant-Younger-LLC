@@ -10,20 +10,21 @@ application {
   }
   entities *
 }
-entity Account {
-	accountName String,
-    balance Double,
+
+entity BankAccount {
+  accountName String,
+  balance Double,
 }
-entity Transaction {
-	date LocalDate,
-    description String,
-    balance Double,
-    merchantName String,
+entity BankTransaction {
+  date LocalDate,
+  description String,
+  balance Double,
+  merchantName String,
 }
 
 relationship OneToMany{
-  User{accounts} to Account,
-  Account{transaction} to Transaction
+  User{accounts} to BankAccount{user},
+  BankAccount{transaction} to BankTransaction{user}
 }
 
 
