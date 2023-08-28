@@ -1,0 +1,31 @@
+
+application {
+  config {
+    baseName DurantYoungerTrust,
+    applicationType monolith,
+    packageName com.myapp,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+    clientFramework angular
+  }
+  entities *
+}
+entity Account {
+	accountName String,
+    balance Double,
+}
+entity Transaction {
+	date LocalDate,
+    description String,
+    balance Double,
+    merchantName String,
+}
+
+relationship OneToMany{
+  User{accounts} to Account,
+  Account{transaction} to Transaction
+}
+
+
+
+    
