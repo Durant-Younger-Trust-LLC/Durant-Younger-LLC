@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "dy-trust-llc": {
+    "durant-younger-trust": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -76,15 +76,15 @@
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
-            "browserTarget": "dy-trust-llc:build:development",
+            "browserTarget": "durant-younger-trust:build:development",
             "port": 4200
           },
           "configurations": {
             "production": {
-              "browserTarget": "dy-trust-llc:build:production"
+              "browserTarget": "durant-younger-trust:build:production"
             },
             "development": {
-              "browserTarget": "dy-trust-llc:build:development"
+              "browserTarget": "durant-younger-trust:build:development"
             }
           },
           "defaultConfiguration": "development"

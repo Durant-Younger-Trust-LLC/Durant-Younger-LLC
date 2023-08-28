@@ -11,7 +11,7 @@ application {
   entities *
 }
 entity BankUser{
-  
+
 }
 
 entity BankAccount {
@@ -30,7 +30,7 @@ relationship OneToMany{
   BankAccount{transaction} to BankTransaction{user}
 }
 relationship OneToOne{
-  BankUser{internalUser(login)} to User
+  BankUser{internalUser(login)} to User{bankUser}
 }
 
 

@@ -1,0 +1,120 @@
+<div>
+  <h2 id="page-heading" data-cy="BankTransactionHeading">
+    <span jhiTranslate="durantYoungerTrustApp.bankTransaction.home.title">Bank Transactions</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="load()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+        <span jhiTranslate="durantYoungerTrustApp.bankTransaction.home.refreshListLabel">Refresh list</span>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-bank-transaction"
+        [routerLink]="['/bank-transaction/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="durantYoungerTrustApp.bankTransaction.home.createLabel"> Create a new Bank Transaction </span>
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  <div class="alert alert-warning" id="no-result" *ngIf="bankTransactions?.length === 0">
+    <span jhiTranslate="durantYoungerTrustApp.bankTransaction.home.notFound">No Bank Transactions found</span>
+  </div>
+
+  <div class="table-responsive table-entities" id="entities" *ngIf="bankTransactions && bankTransactions.length > 0">
+    <table class="table table-striped" aria-describedby="page-heading">
+      <thead>
+        <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" (sortChange)="navigateToWithComponentValues()">
+          <th scope="col" jhiSortBy="id">
+            <div class="d-flex">
+              <span jhiTranslate="global.field.id">ID</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="date">
+            <div class="d-flex">
+              <span jhiTranslate="durantYoungerTrustApp.bankTransaction.date">Date</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="description">
+            <div class="d-flex">
+              <span jhiTranslate="durantYoungerTrustApp.bankTransaction.description">Description</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="balance">
+            <div class="d-flex">
+              <span jhiTranslate="durantYoungerTrustApp.bankTransaction.balance">Balance</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="merchantName">
+            <div class="d-flex">
+              <span jhiTranslate="durantYoungerTrustApp.bankTransaction.merchantName">Merchant Name</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="user.id">
+            <div class="d-flex">
+              <span jhiTranslate="durantYoungerTrustApp.bankTransaction.user">User</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let bankTransaction of bankTransactions; trackBy: trackId" data-cy="entityTable">
+          <td>
+            <a [routerLink]="['/bank-transaction', bankTransaction.id, 'view']">{{ bankTransaction.id }}</a>
+          </td>
+          <td>{{ bankTransaction.date | formatMediumDate }}</td>
+          <td>{{ bankTransaction.description }}</td>
+          <td>{{ bankTransaction.balance }}</td>
+          <td>{{ bankTransaction.merchantName }}</td>
+          <td>
+            <div *ngIf="bankTransaction.user">
+              <a [routerLink]="['/bank-account', bankTransaction.user.id, 'view']">{{ bankTransaction.user.id }}</a>
+            </div>
+          </td>
+          <td class="text-end">
+            <div class="btn-group">
+              <button
+                type="submit"
+                [routerLink]="['/bank-transaction', bankTransaction.id, 'view']"
+                class="btn btn-info btn-sm"
+                data-cy="entityDetailsButton"
+              >
+                <fa-icon icon="eye"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+              </button>
+
+              <button
+                type="submit"
+                [routerLink]="['/bank-transaction', bankTransaction.id, 'edit']"
+                class="btn btn-primary btn-sm"
+                data-cy="entityEditButton"
+              >
+                <fa-icon icon="pencil-alt"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+              </button>
+
+              <button type="submit" (click)="delete(bankTransaction)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                <fa-icon icon="times"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

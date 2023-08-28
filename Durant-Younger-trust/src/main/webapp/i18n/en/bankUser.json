@@ -1,0 +1,25 @@
+{
+  "durantYoungerTrustApp": {
+    "bankUser": {
+      "home": {
+        "title": "Bank Users",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Bank User",
+        "createOrEditLabel": "Create or edit a Bank User",
+        "notFound": "No Bank Users found"
+      },
+      "created": "A new Bank User is created with identifier {{ param }}",
+      "updated": "A Bank User is updated with identifier {{ param }}",
+      "deleted": "A Bank User is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Bank User {{ id }}?"
+      },
+      "detail": {
+        "title": "Bank User"
+      },
+      "id": "ID",
+      "internalUser": "Internal User",
+      "accounts": "Accounts"
+    }
+  }
+}

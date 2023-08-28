@@ -1,0 +1,30 @@
+{
+  "applications": ["DurantYoungerTrust"],
+  "changelogDate": "20230828195447",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "bank_user",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "BankUser",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "bankUser",
+      "ownerSide": true,
+      "relationshipName": "internalUser",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "bankAccount",
+      "otherEntityRelationshipName": "user",
+      "relationshipName": "accounts",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}
