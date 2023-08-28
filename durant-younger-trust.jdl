@@ -10,6 +10,9 @@ application {
   }
   entities *
 }
+entity BankUser{
+  
+}
 
 entity BankAccount {
   accountName String,
@@ -23,8 +26,11 @@ entity BankTransaction {
 }
 
 relationship OneToMany{
-  User{accounts} to BankAccount{user},
+  BankUser{accounts} to BankAccount{user},
   BankAccount{transaction} to BankTransaction{user}
+}
+relationship OneToOne{
+  BankUser{internalUser(login)} to User
 }
 
 
