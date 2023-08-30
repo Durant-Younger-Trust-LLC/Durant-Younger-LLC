@@ -14,4 +14,8 @@ export const EntityNavbarItems = [
     route: 'bank-transaction',
     translationKey: 'global.menu.entities.bankTransaction',
   },
+  {
+    name: 'UserAccount',
+    route: 'user-account',
+  }
 ];

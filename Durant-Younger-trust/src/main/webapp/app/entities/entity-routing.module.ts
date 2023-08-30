@@ -19,6 +19,10 @@ import { RouterModule } from '@angular/router';
         data: { pageTitle: 'durantYoungerTrustApp.bankTransaction.home.title' },
         loadChildren: () => import('./bank-transaction/bank-transaction.module').then(m => m.BankTransactionModule),
       },
+      {
+        path: 'user-account',
+        loadChildren: () => import('./user-account/user-account.module').then(m => m.UserAccountModule),
+      },
       /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */
     ]),
   ],

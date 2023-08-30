@@ -46,6 +46,18 @@
             <li>
               <a
                 class="dropdown-item"
+                routerLink="user-account"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                (click)="collapseNavbar()"
+              >
+                <fa-icon icon="asterisk" [fixedWidth]="true"></fa-icon>
+                <span>User-Account</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
                 routerLink="bank-user"
                 routerLinkActive="active"
                 [routerLinkActiveOptions]="{ exact: true }"
