@@ -21,7 +21,7 @@ export class NavbarComponent implements OnInit {
   isNavbarCollapsed = true;
   languages = LANGUAGES;
   openAPIEnabled?: boolean;
-  version = '';
+  version = '';pwd
   account: Account | null = null;
   entitiesNavbarItems: any[] = [];
 
