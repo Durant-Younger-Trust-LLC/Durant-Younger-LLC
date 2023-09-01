@@ -5,6 +5,7 @@ import { BankUserService } from 'app/entities/bank-user/service/bank-user.servic
 import {Subject, switchMap} from "rxjs";
 import {takeUntil} from "rxjs/operators";
 import {IBankUser} from "../../bank-user/bank-user.model";
+import {IBankAccount} from "../../bank-account/bank-account.model";
 
 @Component({
   selector: 'jhi-user-account-mainpage',
@@ -13,6 +14,7 @@ import {IBankUser} from "../../bank-user/bank-user.model";
 export class UserAccountMainpageComponent implements OnInit {
   account?: Account | null = null;
   bankUser: IBankUser | null = null;
+  bankAccount?: IBankAccount[] | null = null;
 
   private readonly destroy$ = new Subject<void>();
   constructor(

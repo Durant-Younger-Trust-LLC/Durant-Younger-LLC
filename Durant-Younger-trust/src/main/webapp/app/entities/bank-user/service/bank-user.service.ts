@@ -72,6 +72,7 @@ export class BankUserService {
   }
 
   findUserByEmail(email: string | undefined): Observable<EntityResponseType> {
+    // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
     return this.http.get<IBankUser>(`${this.resourceUrl}/user/${email}`, { observe: 'response' });
   }
 }
