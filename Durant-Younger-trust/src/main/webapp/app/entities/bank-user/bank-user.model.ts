@@ -4,7 +4,8 @@ import { IBankAccount} from "../bank-account/bank-account.model";
 export interface IBankUser {
   id: number;
   internalUser?: Pick<IUser, 'id' | 'login'> | null;
-  bankAccount?: Pick<IBankAccount, 'id' | 'accountName'> | null;
+  // bankAccounts?: Pick<IBankAccount, 'id' | 'accountName'> [] | null;
+  accounts?: IBankAccount[];
 }
 
 export type NewBankUser = Omit<IBankUser, 'id'> & { id: null };

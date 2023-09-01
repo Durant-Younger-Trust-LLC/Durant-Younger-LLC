@@ -24,12 +24,19 @@
   </head>
 
     <body>
-<!--    <h1>{{bankUser?.bankAccount}}</h1>-->
+
       <h3 class = 'title'>Checking Accounts</h3>
       <div class="container.fluid">
-        <div class="row">
-            <button class = 'button'>Checking Account - ****</button>
+        <div class="row"  >
+            <button class = 'button'>{{bankUser?.id}}</button>
         </div>
+<!--        <div class="row" *ngFor="let bAccount of bankUser?.accounts" >-->
+<!--          <button class = 'button'>-->
+<!--            {{bAccount.accountName}}-->
+<!--            {{bAccount.id}}-->
+<!--            {{bAccount.balance}}-->
+<!--          </button>-->
+<!--        </div>-->
       </div>
 
       <h3 class = 'title'>Savings Accounts</h3>

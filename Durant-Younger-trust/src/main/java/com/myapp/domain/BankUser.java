@@ -28,7 +28,7 @@ public class BankUser implements Serializable {
     @JoinColumn(unique = true)
     private User internalUser;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "user")
     @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
     @JsonIgnoreProperties(value = { "transactions", "user" }, allowSetters = true)
     private Set<BankAccount> accounts = new HashSet<>();
