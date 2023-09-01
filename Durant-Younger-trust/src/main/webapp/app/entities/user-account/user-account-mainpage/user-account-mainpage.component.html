@@ -7,7 +7,7 @@
       padding: 10px;
       font-family: sans-serif;
       margin-right: 40%;
-      margin-bottom: 2%;
+      margin-bottom: 1%;
       margin-top: 2%;
     }
     .button{
@@ -15,7 +15,12 @@
       width: 50%;
       color: #fff;
       padding: 10px;
+      margin: 10px;
       font-family: sans-serif;
+      border-radius: 5px;
+    }
+    #balance{
+     text-align: end;
     }
   </style>
   <head>
@@ -25,11 +30,32 @@
 
     <body>
 
-      <h3 class = 'title'>Checking Accounts</h3>
+      <h3 class = 'title'>Accounts</h3>
       <div class="container.fluid">
-        <div class="row"  >
-            <button class = 'button'>{{bankUser?.id}}</button>
+        <div class="row-cols-1" *ngFor="let bAccount of bankUser?.accounts" >
+            <div class = 'button' routerLink="/bank-user">
+              {{bAccount.accountName}} - {{bAccount.id}}<p id="balance">Balance: ${{bAccount.balance}}</p>
+            </div>
         </div>
+
+      </div>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--        <div class="row" *ngFor="let bAccount of bankUser?.accounts" >-->
 <!--          <button class = 'button'>-->
 <!--            {{bAccount.accountName}}-->
@@ -37,9 +63,3 @@
 <!--            {{bAccount.balance}}-->
 <!--          </button>-->
 <!--        </div>-->
-      </div>
-
-      <h3 class = 'title'>Savings Accounts</h3>
-      <button class = 'button'>Saving Account - ****</button>
-    </body>
-</html>

@@ -14,7 +14,7 @@ import {IBankAccount} from "../../bank-account/bank-account.model";
 export class UserAccountMainpageComponent implements OnInit {
   account?: Account | null = null;
   bankUser: IBankUser | null = null;
-  bankAccount?: IBankAccount[] | null = null;
+  // bankAccount?: IBankAccount[] | null = null;
 
   private readonly destroy$ = new Subject<void>();
   constructor(

@@ -4,7 +4,7 @@ import { IBankAccount} from "../bank-account/bank-account.model";
 export interface IBankUser {
   id: number;
   internalUser?: Pick<IUser, 'id' | 'login'> | null;
-  // bankAccounts?: Pick<IBankAccount, 'id' | 'accountName'> [] | null;
+  // accounts?: Pick<IBankAccount, 'id' | 'accountName'> [] | null;
   accounts?: IBankAccount[];
 }
 
