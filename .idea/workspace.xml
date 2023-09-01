@@ -5,26 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c07fef2-d60a-4fba-a1c6-fdd6d199d545" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-account-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-account.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/entity-navbar-items.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/entity-navbar-items.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/entity-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/entity-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/layouts/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/layouts/navbar/navbar.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="TypeScript File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -48,30 +34,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/taylor/LocalProjects/Durant-Younger-Trust-LLC&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Surabhi",
+    "last_opened_file_path": "/Users/surabhi/Durant-Younger-Trust-LLC",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account" />
-    </key>
-  </component>
-  <component name="RunManager" selected="npm.Angular CLI Server">
+}]]></component>
+  <component name="RunManager" selected="JavaScript Debug.Angular Application">
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Angular CLI Server" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/Durant-Younger-trust/package.json" />
@@ -93,11 +85,6 @@
       <option name="presentableId" value="Default" />
       <updated>1693250870872</updated>
       <workItem from="1693250871903" duration="1576000" />
-      <workItem from="1693311818028" duration="1578000" />
-      <workItem from="1693324889422" duration="192000" />
-      <workItem from="1693400564792" duration="1588000" />
-      <workItem from="1693402262774" duration="2099000" />
-      <workItem from="1693410063232" duration="1776000" />
     </task>
     <servers />
   </component>
