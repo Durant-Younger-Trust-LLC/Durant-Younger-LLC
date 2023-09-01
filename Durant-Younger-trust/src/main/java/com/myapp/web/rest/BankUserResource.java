@@ -5,12 +5,16 @@ import com.myapp.repository.BankUserRepository;
 import com.myapp.web.rest.errors.BadRequestAlertException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
+
+import net.bytebuddy.implementation.bytecode.Throw;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
@@ -176,5 +180,16 @@ public class BankUserResource {
             .noContent()
             .headers(HeaderUtil.createEntityDeletionAlert(applicationName, true, ENTITY_NAME, id.toString()))
             .build();
+    }
+
+    @GetMapping("/bank-users/user/{email}")
+    public ResponseEntity<BankUser> getBankUserByInternalUser(@PathVariable String email){
+        List<BankUser> users = bankUserRepository.findAllWithEagerRelationships();
+        for(BankUser user: users){
+            if(user.getInternalUser().getEmail().equals(email)){
+                return new ResponseEntity<>(user, HttpStatus.OK);
+            }
+        }
+        throw new IllegalArgumentException("Incorrect email supplies to : /bank-users/user/");
     }
 }
