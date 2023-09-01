@@ -13,6 +13,7 @@
         <span id="home-logged-message" *ngIf="account" jhiTranslate="home.logged.message" [translateValues]="{ username: account.login }"
           >You are logged in as user "{{ account.login }}".</span
         >
+
       </div>
 
       <div class="alert alert-warning" *ngSwitchCase="false">

@@ -70,4 +70,8 @@ export class BankUserService {
     }
     return bankUserCollection;
   }
+
+  findUserByEmail(email: string | undefined): Observable<EntityResponseType> {
+    return this.http.get<IBankUser>(`${this.resourceUrl}/user/${email}`, { observe: 'response' });
+  }
 }
