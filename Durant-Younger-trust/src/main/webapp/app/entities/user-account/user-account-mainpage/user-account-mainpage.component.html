@@ -31,9 +31,9 @@
     <body>
 
       <h3 class = 'title'>Accounts</h3>
-      <div class="container.fluid">
+     <div class="container.fluid">
         <div class="row-cols-1" *ngFor="let bAccount of bankUser?.accounts" >
-            <div class = 'button' routerLink="/bank-user">
+            <div class = 'button' routerLink="/user-account/{{bAccount.id}}/view">
               {{bAccount.accountName}} - {{bAccount.id}}<p id="balance">Balance: ${{bAccount.balance}}</p>
             </div>
         </div>

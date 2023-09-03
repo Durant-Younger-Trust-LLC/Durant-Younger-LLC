@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .title {
+        background: teal;
+        color: #fff;
+        padding: 10px;
+        font-family: Monaco;
+    <!--  margin-right: 40%; -->
+        margin-bottom: 1%;
+        margin-top: 2%;
+    }
+
+    .para{
+
+        color: #3d3b3b;
+        padding: 10px;
+        margin: 10px;
+        font-family: Courier New;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .table{
+
+        color: #594d4d;
+        margin: 20px;
+        font-family: Courier New;
+        font-size: 20px;
+        font-weight: bold;
+    }
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <title>Account Details</title>
+</head>
+
+    <body>
+        <h3 class ='title'> {{bankAccount?.accountName}} Activity</h3><br>
+
+            <p class = 'para'> Available Balance: ${{bankAccount?.balance}}</p>
+                <table class = 'table table-dark'>
+                    <thead class>
+                    <tr>
+                        <th scope ="col">Date</th>
+                        <th scope ="col">Description</th>
+                        <th scope ="col">Amount</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <th scope="row">01/01/2023</th>
+                        <td> Target</td>
+                        <td>$20.20</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">01/01/2023</th>
+                        <td> Walmart</td>
+                        <td>$50.50</td>
+                    </tr>
+
+                </table>
+
+
+    </body>
+
+
+<p></p>
