@@ -6,7 +6,7 @@
         color: #fff;
         padding: 10px;
         font-family: Monaco;
-    <!--  margin-right: 40%; -->
+       /* margin-right: 40%; */
         margin-bottom: 1%;
         margin-top: 2%;
     }
@@ -15,20 +15,27 @@
 
         color: #3d3b3b;
         padding: 10px;
-        margin: 10px;
         font-family: Courier New;
         font-size: 20px;
         font-weight: bold;
+        text-align: left;
     }
 
-    .table{
-
-        color: #594d4d;
-        margin: 20px;
+    .table {
         font-family: Courier New;
-        font-size: 20px;
-        font-weight: bold;
+
     }
+    .table thead {
+        background-color: #9ba0a2;
+        color: white;
+        font-size: 18px;
+
+    }
+
+
+
+
+
 </style>
 
 <head>
@@ -40,26 +47,45 @@
         <h3 class ='title'> {{bankAccount?.accountName}} Activity</h3><br>
 
             <p class = 'para'> Available Balance: ${{bankAccount?.balance}}</p>
-                <table class = 'table table-dark'>
-                    <thead class>
-                    <tr>
-                        <th scope ="col">Date</th>
-                        <th scope ="col">Description</th>
-                        <th scope ="col">Amount</th>
-                    </tr>
-                    </thead>
-                    <tr>
-                        <th scope="row">01/01/2023</th>
-                        <td> Target</td>
-                        <td>$20.20</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">01/01/2023</th>
-                        <td> Walmart</td>
-                        <td>$50.50</td>
-                    </tr>
 
-                </table>
+        <table class="table">
+            <thead class="thead">
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Description</th>
+                <th scope="col">Withdrawls</th>
+                <th scope="col">Deposit</th>
+                <th scope="col">Balance</th>
+            </tr>
+            </thead>
+            <tbody >
+            <tr>
+                <td>01/01/23</td>
+                <td>Target</td>
+                <td>$20</td>
+                <td></td>
+                <td>$updating balance</td>
+            </tr>
+            <tr>
+                <td>01/02/23</td>
+                <td>Wawa</td>
+                <td>$10</td>
+                <td></td>
+                <td>$updating balance</td>
+            </tr>
+            <tr>
+                <td>01/03/23</td>
+                <td>Chik-Fil-A</td>
+                <td>$30</td>
+                <td></td>
+                <td>$updating balance</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+
+
 
 
     </body>
