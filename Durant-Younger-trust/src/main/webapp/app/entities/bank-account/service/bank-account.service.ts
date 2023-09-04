@@ -76,4 +76,10 @@ export class BankAccountService {
     }
     return bankAccountCollection;
   }
+
+  //front end access to the api call
+  findWithTransactions(id: number): Observable<EntityResponseType> {
+    return this.http.get<IBankAccount>(`${this.resourceUrl}/transactions/${id}`, { observe: 'response' });
+  }
+
 }

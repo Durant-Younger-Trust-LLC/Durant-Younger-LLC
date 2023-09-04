@@ -15,18 +15,21 @@ import { MetricsRequestComponent } from './blocks/metrics-request/metrics-reques
 import { MetricsSystemComponent } from './blocks/metrics-system/metrics-system.component';
 
 @NgModule({
-  imports: [SharedModule, RouterModule.forChild([metricsRoute])],
-  declarations: [
-    MetricsComponent,
-    JvmMemoryComponent,
-    JvmThreadsComponent,
-    MetricsCacheComponent,
-    MetricsDatasourceComponent,
-    MetricsEndpointsRequestsComponent,
-    MetricsGarbageCollectorComponent,
-    MetricsModalThreadsComponent,
-    MetricsRequestComponent,
-    MetricsSystemComponent,
-  ],
+    imports: [SharedModule, RouterModule.forChild([metricsRoute])],
+    declarations: [
+        MetricsComponent,
+        JvmMemoryComponent,
+        JvmThreadsComponent,
+        MetricsCacheComponent,
+        MetricsDatasourceComponent,
+        MetricsEndpointsRequestsComponent,
+        MetricsGarbageCollectorComponent,
+        MetricsModalThreadsComponent,
+        MetricsRequestComponent,
+        MetricsSystemComponent,
+    ],
+    exports: [
+        JvmThreadsComponent
+    ]
 })
 export class MetricsModule {}
