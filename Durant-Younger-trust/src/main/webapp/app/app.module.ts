@@ -27,6 +27,7 @@ import { ActiveMenuDirective } from './layouts/navbar/active-menu.directive';
 import { ErrorComponent } from './layouts/error/error.component';
 import { UserAccountMainpageComponent } from './entities/user-account/user-account-mainpage/user-account-mainpage.component';
 import { IndvAccountDetailComponent } from './entities/user-account/indv-account-detail/indv-account-detail.component';
+import { UserTransferComponent } from './entities/user-account/user-transfer/user-transfer.component';
 
 @NgModule({
   imports: [

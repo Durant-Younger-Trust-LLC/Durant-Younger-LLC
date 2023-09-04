@@ -37,6 +37,7 @@ public interface BankUserRepository extends JpaRepository<BankUser, Long> {
 
     @Query("select bankUser from BankUser bankUser left join fetch bankUser.internalUser where bankUser.id =:id")
     Optional<BankUser> findOneWithToOneRelationships(@Param("id") Long id);
-    @Query(value = "SELECT * FROM BANK_USER LEFT JOIN JHI_USER ON BANK_USER.INTERNAL_USER_ID = JHI_USER.ID LEFT JOIN BANK_ACCOUNT ON BANK_USER.ID = BANK_ACCOUNT.USER_ID", nativeQuery = true)
+//    @Query(value = "SELECT * FROM BANK_USER LEFT JOIN JHI_USER ON BANK_USER.INTERNAL_USER_ID = JHI_USER.ID LEFT JOIN BANK_ACCOUNT ON BANK_USER.ID = BANK_ACCOUNT.USER_ID", nativeQuery = true)
+    @Query("select bankUser from BankUser bankUser left join fetch bankUser.internalUser left join fetch bankUser.accounts")
     List<BankUser> findBankUserWithAllRelationship();
 }
