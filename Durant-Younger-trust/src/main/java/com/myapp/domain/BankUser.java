@@ -29,7 +29,7 @@ public class BankUser implements Serializable {
     private User internalUser;
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "user")
-    @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
+//    @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
     @JsonIgnoreProperties(value = { "transactions", "user" }, allowSetters = true)
     private Set<BankAccount> accounts = new HashSet<>();
 
