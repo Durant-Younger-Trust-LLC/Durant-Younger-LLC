@@ -184,7 +184,7 @@ public class BankUserResource {
 
     @GetMapping("/bank-users/user/{email}")
     public ResponseEntity<BankUser> getBankUserByInternalUser(@PathVariable String email){
-        List<BankUser> users = bankUserRepository.findAllWithEagerRelationships();
+        List<BankUser> users = bankUserRepository.findBankUserWithAllRelationship();
         for(BankUser user: users){
             if(user.getInternalUser().getEmail().equals(email)){
                 return new ResponseEntity<>(user, HttpStatus.OK);
