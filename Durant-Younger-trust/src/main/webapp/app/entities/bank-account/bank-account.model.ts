@@ -8,3 +8,4 @@ export interface IBankAccount {
 }
 
 export type NewBankAccount = Omit<IBankAccount, 'id'> & { id: null };
+""
