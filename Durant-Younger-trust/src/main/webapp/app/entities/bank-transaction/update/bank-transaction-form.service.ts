@@ -7,7 +7,7 @@ import { IBankTransaction, NewBankTransaction } from '../bank-transaction.model'
  * A partial Type with required key is used as form input.
  */
 type PartialWithRequiredKeyOf<T extends { id: unknown }> = Partial<Omit<T, 'id'>> & { id: T['id'] };
-
+//
 /**
  * Type for createFormGroup and resetForm argument.
  * It accepts IBankTransaction for edit and NewBankTransactionFormGroupInput for create.
