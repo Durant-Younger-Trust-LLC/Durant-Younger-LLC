@@ -6,6 +6,7 @@ import {BankAccountDetailComponent} from "../../bank-account/detail/bank-account
 import {BankAccountRoutingResolveService} from "../../bank-account/route/bank-account-routing-resolve.service";
 import {IndvAccountDetailComponent} from "../indv-account-detail/indv-account-detail.component";
 import {IndvAccountRoutingResolveService} from "./indv-account-routing-resolve.service";
+import {UserAccountNewComponent} from "../user-account-new/user-account-new.component";
 
 const bankTransactionRoute: Routes = [
   {
@@ -19,6 +20,14 @@ const bankTransactionRoute: Routes = [
     resolve: {
       bankAccount: IndvAccountRoutingResolveService,
     },
+    canActivate: [UserRouteAccessService],
+  },
+  {
+    path: 'new',
+    component: UserAccountNewComponent,
+    // resolve: {
+    //   bankAccount: IndvAccountRoutingResolveService,
+    // },
     canActivate: [UserRouteAccessService],
   },
 ];
