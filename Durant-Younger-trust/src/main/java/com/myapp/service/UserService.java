@@ -2,8 +2,12 @@ package com.myapp.service;
 
 import com.myapp.config.Constants;
 import com.myapp.domain.Authority;
+import com.myapp.domain.BankAccount;
+import com.myapp.domain.BankUser;
 import com.myapp.domain.User;
 import com.myapp.repository.AuthorityRepository;
+import com.myapp.repository.BankAccountRepository;
+import com.myapp.repository.BankUserRepository;
 import com.myapp.repository.UserRepository;
 import com.myapp.security.AuthoritiesConstants;
 import com.myapp.security.SecurityUtils;
@@ -40,17 +44,24 @@ public class UserService {
     private final AuthorityRepository authorityRepository;
 
     private final CacheManager cacheManager;
+    private final BankUserRepository bankUserRepository;
+    private final BankAccountRepository bankAccountRepository;
+
 
     public UserService(
         UserRepository userRepository,
         PasswordEncoder passwordEncoder,
         AuthorityRepository authorityRepository,
-        CacheManager cacheManager
+        CacheManager cacheManager,
+        BankUserRepository bankUserRepository,
+        BankAccountRepository bankAccountRepository
     ) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
         this.authorityRepository = authorityRepository;
         this.cacheManager = cacheManager;
+        this.bankUserRepository = bankUserRepository;
+        this.bankAccountRepository = bankAccountRepository;
     }
 
     public Optional<User> activateRegistration(String key) {
@@ -123,16 +134,35 @@ public class UserService {
         newUser.setImageUrl(userDTO.getImageUrl());
         newUser.setLangKey(userDTO.getLangKey());
         // new user is not active
-        newUser.setActivated(false);
+        newUser.setActivated(true);
         // new user gets registration key
         newUser.setActivationKey(RandomUtil.generateActivationKey());
         Set<Authority> authorities = new HashSet<>();
         authorityRepository.findById(AuthoritiesConstants.USER).ifPresent(authorities::add);
         newUser.setAuthorities(authorities);
         userRepository.save(newUser);
+        this.setupUserWithBaseRequirements(newUser);
         this.clearUserCaches(newUser);
         log.debug("Created Information for User: {}", newUser);
         return newUser;
+    }
+
+
+
+    private void setupUserWithBaseRequirements(User newUser){
+        BankAccount checking = new BankAccount();
+        BankAccount savings = new BankAccount();
+        BankUser user = new BankUser();
+        user.setInternalUser(newUser);
+        bankUserRepository.save(user);
+        checking.setAccountName("Checking Account");
+        savings.setAccountName("Savings Account");
+        savings.setBalance(0.00);
+        checking.setBalance(0.00);
+        savings.setUser(user);
+        checking.setUser(user);
+        bankAccountRepository.save(checking);
+        bankAccountRepository.save(savings);
     }
 
     private boolean removeNonActivatedUser(User existingUser) {
