@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6c07fef2-d60a-4fba-a1c6-fdd6d199d545" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/bank-transaction/list/bank-transaction.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/bank-transaction/list/bank-transaction.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/indv-account-detail/indv-account-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/indv-account-detail/indv-account-detail.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-account-mainpage/user-account-mainpage.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-account-mainpage/user-account-mainpage.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
