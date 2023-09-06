@@ -5,22 +5,22 @@
       background: teal;
       color: #fff;
       padding: 10px;
-      font-family: Monaco;
-
+      font-family: sans-serif;
+      margin-right: 40%;
       margin-bottom: 1%;
       margin-top: 2%;
     }
     .button{
-      background: #9ba0a2;
+      background: gray;
       width: 50%;
       color: #fff;
       padding: 10px;
       margin: 10px;
-      font-family: Monaco;
+      font-family: sans-serif;
       border-radius: 5px;
     }
     #balance{
-     text-align: right;
+     text-align: end;
     }
   </style>
   <head>
@@ -28,13 +28,14 @@
     <title>Accounts</title>
   </head>
 
-  <div class="text-end">
-    <a class="btn btn-secondary" routerLink = "/user-account/new">Add New Account</a>
+  <div class="text-end" style="margin-bottom: 20px;">
+    <a class="btn btn-secondary" routerLink="/user-account/new">Add New Account</a>
   </div>
   <div class="text-end">
-    <a class="btn btn-secondary" routerLink="/user-account/{{this.bankUser?.id}}/transfer">Transfer Funds</a>
+    <a class="btn btn-secondary" routerLink="/user-account/transfer">Transfer Funds</a>
   </div>
-    <body>
+
+  <body>
       <h3 class = 'title'>Accounts</h3>
      <div class="container.fluid">
         <div class="row-cols-1" *ngFor="let bAccount of bankUser?.accounts" >
@@ -42,8 +43,13 @@
               {{bAccount.accountName}} - {{bAccount.id}}<p id="balance">Balance: ${{bAccount.balance}}</p>
             </div>
         </div>
+     </div>
 
-      </div>
+
+
+
+
+
 
     </body>
 </html>

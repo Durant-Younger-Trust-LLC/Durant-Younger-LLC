@@ -7,8 +7,6 @@ import {BankAccountRoutingResolveService} from "../../bank-account/route/bank-ac
 import {IndvAccountDetailComponent} from "../indv-account-detail/indv-account-detail.component";
 import {IndvAccountRoutingResolveService} from "./indv-account-routing-resolve.service";
 import {UserAccountNewComponent} from "../user-account-new/user-account-new.component";
-import {UserTransferComponent} from "../user-transfer/user-transfer.component";
-import {BankUserRoutingResolveService} from "../../bank-user/route/bank-user-routing-resolve.service";
 
 const bankTransactionRoute: Routes = [
   {
@@ -24,6 +22,7 @@ const bankTransactionRoute: Routes = [
     },
     canActivate: [UserRouteAccessService],
   },
+
   {
     path: 'new',
     component: UserAccountNewComponent,
@@ -32,15 +31,13 @@ const bankTransactionRoute: Routes = [
     // },
     canActivate: [UserRouteAccessService],
   },
-  {// id is a variable ,
-    path: ':id/transfer',
-    component: UserTransferComponent,
-    resolve: {
-      bankUser: BankUserRoutingResolveService,
-    },
-    canActivate: [UserRouteAccessService],
-  },
 
+  // route for transferring money
+  {
+  path: ':id/transfer',
+  component: TransferComponent,
+  canActivate: [UserRouteAccessService], // Optional: Add any canActivate guards if needed
+},
 
 
 
