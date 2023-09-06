@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6c07fef2-d60a-4fba-a1c6-fdd6d199d545" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/java/com/myapp/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/java/com/myapp/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="Dave" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,7 +67,7 @@
       <recent name="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-account-routing" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Angular Application">
+  <component name="RunManager">
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
     </configuration>
