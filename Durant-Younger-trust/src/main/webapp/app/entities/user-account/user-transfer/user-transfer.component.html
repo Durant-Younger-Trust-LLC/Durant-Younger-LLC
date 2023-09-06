@@ -2,21 +2,38 @@
   <h1 class="panel-title">Transfer Funds</h1>
   <br><br>
   <form id="new-account-form">
-    <label for="account1-name"  class="form-label" >Account to withdraw from: </label>
-    <input id="account1-name" placeholder="Type Account Name" required #accountName><br><br>
-    <label for="account1-amount" class="form-label">Amount to be transfered</label>
-    <input id="account1-amount" placeholder="amount" required #accountName><br><br>
+    <label for="account1-name" class="form-label">Account to withdraw from:</label>
+    <select id="account1-name" required>
+      <option value="" selected>Select an account</option>
+      <!-- Loop through the accountList to generate options -->
+      <option *ngFor="let bAccount of bankUser?.accounts" [value]="bAccount">{{ bAccount }}</option>
+    </select><br><br>
 
+    <label for="account1-amount" class="form-label">Amount to be transferred</label>
+    <input type="text" id="account1-amount" placeholder="Amount" required><br><br>
 
-    <label for="account2-name"  class="form-label" >Account sending funds to: </label>
-    <input id="account2-name" placeholder="Type Account Name" required #accountName><br><br>
-    <label for="account2-amount" class="form-label">Amount to be transfered</label>
-    <input id="account2-amount" placeholder="amount" required #accountName><br><br>
+    <label for="account2-name" class="form-label">Account sending funds to:</label>
+    <select id="account2-name" required>
+      <option value="" disabled selected>Select an account</option>
+      <!-- Loop through the accountList to generate options -->
+      <option *ngFor="let bAccount of bankUser?.accounts" [value]="bAccount">{{ bAccount }}</option>
+    </select><br><br>
 
+    <label for="account2-amount" class="form-label">Amount to be transferred</label>
+    <input type="text" id="account2-amount" placeholder="Amount" required><br><br>
 
-
-    <!--    <a class="btn btn-primary text-end" (click)="add(accountName.value); accountName.value = ''">Submit</a>-->
+    <!-- Add the submit button -->
+    <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 
 </div>
-//
+
+
+
+
+
+
+
+
+
+
