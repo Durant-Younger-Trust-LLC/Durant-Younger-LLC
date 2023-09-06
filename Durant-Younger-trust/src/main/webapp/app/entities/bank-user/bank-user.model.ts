@@ -9,3 +9,5 @@ export interface IBankUser {
 }
 
 export type NewBankUser = Omit<IBankUser, 'id'> & { id: null };
+
+// this an array of all the acounts that the bank user has
