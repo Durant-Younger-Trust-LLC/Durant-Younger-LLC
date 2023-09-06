@@ -1,32 +1,55 @@
-<div class="text-center">
+<!--<div class="text-center">
   <h1 class="panel-title">Transfer Funds</h1>
   <br><br>
   <form id="new-account-form">
-    <label for="account1-name" class="form-label">Account to withdraw from:</label>
-    <select id="account1-name" required>
-      <option value="" selected>Select an account</option>
-      <!-- Loop through the accountList to generate options -->
-      <option *ngFor="let bAccount of bankUser?.accounts" [value]="bAccount">{{ bAccount }}</option>
-    </select><br><br>
+    <label for="account-name"  class="form-label" >Account to withdraw from: </label>
+    <input id="account-name" placeholder="Type Account Name" required #accountName><br><br>
+    <input id="account-name" placeholder="amount" required #accountName><br><br>
 
-    <label for="account1-amount" class="form-label">Amount to be transferred</label>
-    <input type="text" id="account1-amount" placeholder="Amount" required><br><br>
 
-    <label for="account2-name" class="form-label">Account sending funds to:</label>
-    <select id="account2-name" required>
-      <option value="" disabled selected>Select an account</option>
-      <!-- Loop through the accountList to generate options -->
-      <option *ngFor="let bAccount of bankUser?.accounts" [value]="bAccount">{{ bAccount }}</option>
-    </select><br><br>
+    <label for="account-name"  class="form-label" >Account sending funds to: </label>
+    <input id="account-name" placeholder="Type Account Name" required #accountName><br><br>
+    <input id="account-name" placeholder="amount" required #accountName><br><br>
 
-    <label for="account2-amount" class="form-label">Amount to be transferred</label>
-    <input type="text" id="account2-amount" placeholder="Amount" required><br><br>
 
-    <!-- Add the submit button -->
-    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <a class="btn btn-primary text-end" (click)="add(accountName.value); accountName.value = ''">Submit</a>
   </form>
 
 </div>
+
+
+                                     OR
+
+
+
+<div class="container">
+  <h2>Transfer Money</h2>
+  <form [formGroup]="transferForm" (ngSubmit)="transferMoney()">
+    <div class="form-group">
+      <label for="fromAccount">From Account:</label>
+      <select id="fromAccount" formControlName="fromAccount" class="form-control" required>
+        <option *ngFor="let account of accounts" [value]="account.id">{{ account.accountName }}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="toAccount">To Account:</label>
+      <select id="toAccount" formControlName="toAccount" class="form-control" required>
+        <option *ngFor="let account of accounts" [value]="account.id">{{ account.accountName }}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="amount">Transfer Amount:</label>
+      <input type="number" id="amount" formControlName="amount" class="form-control" step="0.01" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Transfer</button>
+  </form>
+</div>
+-->
+
+
+
+
 
 
 
