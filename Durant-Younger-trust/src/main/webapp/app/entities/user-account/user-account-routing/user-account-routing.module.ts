@@ -37,8 +37,8 @@ const bankTransactionRoute: Routes = [
   {
   path: ':id/transfer',
   component: TransferComponent,
-  canActivate: [UserRouteAccessService], // Optional: Add any canActivate guards if needed
-},
+  canActivate: [UserRouteAccessService],
+  },
 
 
 
