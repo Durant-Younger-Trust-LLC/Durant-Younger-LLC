@@ -5,6 +5,28 @@
 Navbar
 ========================================================================== */
 
+.custom-navbar{
+  background-color: teal ;
+}
+
+.navbar-title{
+  font-family: Monaco;
+  color: #a5c2c5;
+  margin-left: 4%;
+  font-size:25px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+
+
+}
+
+.nav-item{
+  font-family: Monaco;
+  color: #a5c2c5;
+  font-size: 17px;
+
+
+}
+
 .navbar-version {
   font-size: 0.65em;
   color: $navbar-dark-color;
@@ -27,10 +49,10 @@ Navbar
 Logo styles
 ========================================================================== */
 .logo-img {
-  height: 45px;
-  width: 45px;
+  height: 90px;
+  width: 90px;
   display: inline-block;
   vertical-align: middle;
-  background: url('../../../content/images/logo-jhipster.png') no-repeat center center;
+  background: url('../../../content/images/newTealLogo.png') no-repeat center center;
   background-size: contain;
 }
