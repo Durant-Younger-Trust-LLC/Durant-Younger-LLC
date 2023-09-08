@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c07fef2-d60a-4fba-a1c6-fdd6d199d545" name="Changes" comment="">
+    <list default="true" id="6c07fef2-d60a-4fba-a1c6-fdd6d199d545" name="Changes" comment="still working this is not final">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/homepage/homepage.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/homepage/homepage.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/homepage/homepage.component.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,33 +43,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Surabhi2&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/taylor/LocalProjects/Durant-Younger-Trust-LLC&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;eec9b165b590e63568a49af412b3baad&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/surabhi/Projects/Durant-Younger-LLC/Durant-Younger-trust/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Surabhi2",
+    "last_opened_file_path": "/Users/dave/IdeaProjects/Durant-Younger-LLC",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "eec9b165b590e63568a49af412b3baad",
+    "ts.external.directory.path": "/Users/surabhi/Projects/Durant-Younger-LLC/Durant-Younger-trust/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account" />
       <recent name="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-account-routing" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.Angular Application">
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
     </configuration>
@@ -119,10 +121,24 @@
       <workItem from="1693839664480" duration="357000" />
       <workItem from="1693841930035" duration="4178000" />
       <workItem from="1693937223252" duration="9251000" />
+      <workItem from="1694187664564" duration="539000" />
     </task>
+    <task id="LOCAL-00001" summary="still working this is not final">
+      <option name="closed" value="true" />
+      <created>1694183829656</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694183829656</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="still working this is not final" />
+    <option name="LAST_COMMIT_MESSAGE" value="still working this is not final" />
   </component>
 </project>
