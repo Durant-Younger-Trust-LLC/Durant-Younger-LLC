@@ -13,13 +13,16 @@ export class UserTransferComponent implements OnInit {
 transferForm: FormGroup;
 accounts?: IBankAccount[]; // Assuming you have a way to retrieve the user's accounts
 bankUser?: IBankUser;
+toAccount?: IBankAccount | null = null;
+  fromAccount?: IBankAccount | null = null;
+  amount?: number  | null = null;
 
 constructor(private fb: FormBuilder, private bankAccountService: BankAccountService,
             protected activatedRoute: ActivatedRoute) {
     this.transferForm = this.fb.group({
-      fromAccount: [null, Validators.required],
-      toAccount: [null, Validators.required],
-      amount: [null, [Validators.required, Validators.min(0.01)]],
+      fromAccount: ['', Validators.required],
+      toAccount: ['', Validators.required],
+      amount: ['', [Validators.required, Validators.min(0.01)]],
     });
   }
 
@@ -39,29 +42,18 @@ constructor(private fb: FormBuilder, private bankAccountService: BankAccountServ
     }
 transferMoney() {
     if (this.transferForm.valid) {
-      const fromAccount = this.transferForm.get('fromAccount')?.value;
-      const toAccount = this.transferForm.get('toAccount')?.value;
-      const amount = this.transferForm.get('amount')?.value;
+      console.log("We made it here")
+      // const fromAccount = this.transferForm.get('fromAccount')?.value;
+      // const toAccount = this.transferForm.get('toAccount')?.value;
+      // const amount = this.transferForm.get('amount')?.value;
 
-      // Perform the money transfer logic here
-      // You should update the account balances accordingly
+      console.log(this.toAccount)
+      console.log(this.fromAccount)
+      console.log(this.amount)
 
-      // Example code (you need to replace it with your actual logic):
-      if (fromAccount && toAccount && amount) {
-        // const fromAccountObj = this.accounts.find((account) => account.id === fromAccount);
-        // const toAccountObj = this.accounts.find((account) => account.id === toAccount);
+      if (this.fromAccount && this.toAccount && this.amount) {
 
-        // if (fromAccountObj && toAccountObj) {
-        //   if (fromAccountObj.balance >= amount) {
-        //     fromAccountObj.balance -= amount;
-        //     toAccountObj.balance += amount;
-        //
-        //     // Update the account balances in your database using your service
-        //     // This is a placeholder; replace it with your actual service call
-        //     this.bankAccountService.updateAccount(fromAccountObj).subscribe();
-        //     this.bankAccountService.updateAccount(toAccountObj).subscribe();
 
-            // Optionally, you can display a success message
 
             console.log('Money transferred successfully.');
           } else {

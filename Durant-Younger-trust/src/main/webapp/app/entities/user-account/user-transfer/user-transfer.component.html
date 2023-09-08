@@ -3,27 +3,25 @@
   <br><br>
   <form id="new-account-form">
     <label for="account1-name" class="form-label">Account to withdraw from:</label>
-    <select id="account1-name" required>
+    <select id="account1-name"  required>
       <option value="" selected>Select an account</option>
       <!-- Loop through the accountList to generate options -->
-      <option *ngFor="let bAccount of bankUser?.accounts" [value]="bAccount">{{ bAccount.accountName }}</option>
+      <option formControl="fromAccount" *ngFor="let bAccount of bankUser?.accounts" [ngValue]="bAccount">{{ bAccount }}</option>
     </select><br><br>
 
-    <label for="account1-amount" class="form-label">Amount to be transferred</label>
-    <input type="text" id="account1-amount" placeholder="Amount" required><br><br>
-
     <label for="account2-name" class="form-label">Account sending funds to:</label>
-    <select id="account2-name" required>
+    <select id="account2-name"  required>
       <option value="" disabled selected>Select an account</option>
       <!-- Loop through the accountList to generate options -->
-      <option *ngFor="let bAccount of bankUser?.accounts" [value]="bAccount">{{ bAccount.accountName }}</option>
+      <option formControl="toAccount" *ngFor="let bAccount of bankUser?.accounts" [ngValue]="bAccount">{{ bAccount }}</option>
     </select><br><br>
 
     <label for="account2-amount" class="form-label">Amount to be transferred</label>
-    <input type="text" id="account2-amount" placeholder="Amount" required><br><br>
-
+    <input formControl="amount" type="number" id="account2-amount" placeholder="Amount"  required><br><br>
+  <p>{{transferForm.status}}</p>
     <!-- Add the submit button -->
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" (click)="transferMoney()" class="btn btn-primary">Submit</button>
+
   </form>
 
 </div>
