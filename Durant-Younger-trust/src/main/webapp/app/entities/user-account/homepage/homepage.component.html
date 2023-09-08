@@ -1,114 +1,43 @@
+<!DOCTYPE html>
+<html>
 <style>
-    .title {
-        background: teal;
-        color: #fff;
-        padding: 10px;
-        font-family: Monacocd;
-        margin-center
-        margin-bottom: 1%;
-        margin-top: 2%;
-    }
+  .title {
+    background: #515e5e;
+    color: #fff;
+    padding: 10px;
+    font-family: Monaco;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    text-align:center;
+  }
+  .para{
 
-    .para{
+    color: #656363;
+    padding: 30px;
+    font-family: Courier New;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 
-        color: #3d3b3b;
-        padding: 10px;
-        font-family: Courier New;
-        font-size: 20px;
-        font-weight: bold;
-        text-align: left;
-    }
+  }
 
-    .table {
-        font-family: Courier New;
-
-    }
-    .table thead {
-        background-color: #9ba0a2;
-        color: white;
-        font-size: 18px;
-    }
 
 </style>
-<!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <h1 class = "title">Welcome To Durant & Younger Banking</h1>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+  <meta charset="utf-8">
+  <title>Accounts</title>
 </head>
 <body>
-<header>
-  <nav>
-    <ul>
-      <li><a href="#features">Features</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#download">Download</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+<h3 class = 'title'>WELCOME TO DURANT & YOUNGER BANKING </h3>
+<p class = 'para'>Select a Banking Action</p>
 
-<section class="hero">
-  <h1>Welcome to Money Management</h1>
-  <p>Take control of your finances with our easy-to-use money management app.</p>
-  <a href="#download" class="cta-button">Download Now</a>
-</section>
+<div class="d-flex justify-content-center" style="margin-bottom: 20px;">
+  <a class="btn btn-secondary" routerLink="/user-account/new">Add New Account</a>
+</div>
+<div class="d-flex justify-content-center" style="margin-bottom: 20px;">
+  <a class="btn btn-secondary" routerLink="/user-account">Accounts</a>
+</div>
 
-<section id="features" class="feature-section">
-  <h2>Features</h2>
-  <div class="feature">
-    <img src="budget-icon.png" alt="Budget icon">
-    <h3>Budget Tracking</h3>
-    <p>Effortlessly track your income and expenses to create a budget that suits your financial goals.</p>
-  </div>
-
-  <div class="feature">
-    <img src="report-icon.png" alt="Report icon">
-    <h3>Financial Reports</h3>
-    <p>Generate detailed financial reports and gain insights into your spending habits and savings.</p>
-  </div>
-
-  <div class="feature">
-    <img src="security-icon.png" alt="Security icon">
-    <h3>Bank-Level Security</h3>
-    <p>Your financial data is secured with state-of-the-art encryption to protect your privacy.</p>
-  </div>
-</section>
-
-<section id="pricing" class="pricing-section">
-  <h2>Pricing</h2>
-  <div class="pricing-plan">
-    <h3>Free Plan</h3>
-    <p>Basic budget tracking features</p>
-    <p>Ads included</p>
-    <a href="#download" class="cta-button">Get Started</a>
-  </div>
-
-  <div class="pricing-plan">
-    <h3>Premium Plan</h3>
-    <p>Advanced budget tracking and reporting</p>
-    <p>Ad-free experience</p>
-    <a href="#download" class="cta-button">Subscribe</a>
-  </div>
-</section>
-
-<section id="download" class="cta-section">
-  <h2>Download the App</h2>
-  <p>Manage your money on the go. Download the Money Management app today!</p>
-  <a href="https://yourappstorelink.com" class="cta-button">Download Now</a>
-</section>
-
-<section id="contact" class="contact-section">
-  <h2>Contact Us</h2>
-  <p>If you have any questions or feedback, feel free to contact us:</p>
-  <p>Email: Durant-Younger-LLC@mymoneymanagerapp.com</p>
-  <p>Phone: 302-981-5944</p>
-</section>
-
-<footer>
-  <p>&copy; 2023 Money Management</p>
-</footer>
 </body>
 </html>
