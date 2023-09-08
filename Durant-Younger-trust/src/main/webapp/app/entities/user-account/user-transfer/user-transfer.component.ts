@@ -18,6 +18,8 @@ export class UserTransferComponent implements OnInit {
   bankUser: IBankUser | null = null;
   validTransfer = true;
   dummyAccount: IBankAccount = {id: 0};
+  //const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+  sleep = (ms: number | undefined) => new Promise(r => setTimeout(r, ms));
   transferForm = new FormGroup({
     toAccountForm: new FormControl<IBankAccount>(this.dummyAccount, Validators.required),
     fromAccountForm: new FormControl<IBankAccount>( this.dummyAccount, Validators.required),
@@ -43,10 +45,9 @@ export class UserTransferComponent implements OnInit {
       let fromAccount = this.transferForm.value.fromAccountForm;
       let toAccount = this.transferForm.value.toAccountForm;
       let amount = this.transferForm.value.amountForm;
-      console.log(fromAccount);console.log(toAccount); console.log(amount);
+      // console.log(fromAccount);console.log(toAccount); console.log(amount);
       if(fromAccount?.balance && amount){
         if(amount <= fromAccount.balance && toAccount){
-          console.log("did it")
           this.validTransfer = true;
           this.transferMoney(fromAccount, toAccount, amount);
         }else{
@@ -82,7 +83,8 @@ export class UserTransferComponent implements OnInit {
     }
   }
 
-  previousState(): void {
+  async previousState(): Promise<void> {
+    await this.sleep(1000);
     window.history.back();
   }
 }
