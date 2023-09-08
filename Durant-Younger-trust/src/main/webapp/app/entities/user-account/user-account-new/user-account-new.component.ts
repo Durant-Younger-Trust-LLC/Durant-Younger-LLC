@@ -51,6 +51,7 @@ export class UserAccountNewComponent implements OnInit {
 
   previousState(): void {
     window.history.back();
+
   }
 }
 

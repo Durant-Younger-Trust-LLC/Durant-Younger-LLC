@@ -1,1 +1,26 @@
-<p>user-transfer works!</p>
+<div class="text-center">
+  <h1 class="panel-title">Transfer Funds</h1>
+  <br><br>
+
+  <form id="new-account-form" [formGroup]="transferForm" (ngSubmit)="transferMoney()">
+    <label for="account1-name" >Account to withdraw from:</label>
+    <select id="account1-name" formControlName="fromAccountForm">
+      <option selected [ngValue]="null">Select an account</option>
+      <!-- Loop through the accountList to generate options -->
+      <option  *ngFor="let bAccount of bankUser?.accounts" [ngValue]="bAccount">{{ bAccount.accountName }}</option>
+    </select><br><br>
+
+    <label for="account2-name" >Account sending funds to:</label>
+    <select id="account2-name" formControlName="toAccountForm">
+      <option selected [ngValue]="null">Select an account</option>
+      <option  *ngFor="let bAccount of bankUser?.accounts" [ngValue]="bAccount">{{ bAccount.accountName }}</option>
+    </select><br><br>
+
+    <label for="account2-amount" >Amount to be transferred</label>
+    <input formControlName="ammountForm" type="number" id="account2-amount" placeholder="Amount"  required><br><br>
+    <p>{{transferForm.status}}</p>
+    <p></p>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+</div>
