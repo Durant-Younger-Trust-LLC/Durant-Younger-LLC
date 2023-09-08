@@ -1,6 +1,7 @@
 <div class="text-center">
   <h1 class="panel-title">Transfer Funds</h1>
   <br><br>
+
   <form id="new-account-form" [formGroup]="transferForm" (ngSubmit)="transferMoney()">
     <label for="account1-name" >Account to withdraw from:</label>
     <select id="account1-name" formControlName="fromAccountForm">
@@ -20,7 +21,6 @@
     <p>{{transferForm.status}}</p>
     <p></p>
     <button type="submit" class="btn btn-primary">Submit</button>
-
   </form>
 
 </div>
