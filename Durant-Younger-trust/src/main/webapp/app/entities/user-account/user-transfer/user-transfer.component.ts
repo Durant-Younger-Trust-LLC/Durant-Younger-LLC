@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators, ReactiveFormsModule} from '@angular/forms';
 import { BankAccountService } from '../../bank-account/service/bank-account.service';
 import { IBankAccount} from '../../bank-account/bank-account.model';
+
 import {IBankUser} from "../../bank-user/bank-user.model";
 import { ActivatedRoute } from '@angular/router';
 import {NewBankTransaction} from "../../bank-transaction/bank-transaction.model";
@@ -9,11 +10,13 @@ import dayjs from "dayjs/esm";
 import {BankTransactionService} from "../../bank-transaction/service/bank-transaction.service";
 import {from} from "rxjs";
 
+
 @Component({
   selector: 'jhi-user-transfer',
   templateUrl: './user-transfer.component.html',
 })
 export class UserTransferComponent implements OnInit {
+
   accounts?: IBankAccount[]; // Assuming you have a way to retrieve the user's accounts
   bankUser: IBankUser | null = null;
   validTransfer = true;
@@ -81,8 +84,8 @@ export class UserTransferComponent implements OnInit {
       this.previousState();
     }
   }
-
   previousState(): void {
     window.history.back();
   }
 }
+

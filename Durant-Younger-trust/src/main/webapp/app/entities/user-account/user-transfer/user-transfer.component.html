@@ -4,7 +4,6 @@
   <div class="alert alert-danger"  *ngIf="!validTransfer">
     <span >Invalid transfer amount</span>
   </div>
-
   <form id="new-account-form" [formGroup]="transferForm" (ngSubmit)="sumbit()">
     <label for="account1-name" >Account to withdraw from:</label>
     <select id="account1-name" formControlName="fromAccountForm">
@@ -24,7 +23,6 @@
     <p>{{transferForm.status}}</p>
     <p></p>
     <button type="submit" class="btn btn-primary">Submit</button>
-
   </form>
 
 </div>
