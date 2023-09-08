@@ -15,14 +15,15 @@ export class UserTransferComponent implements OnInit {
   bankUser?: IBankUser;
   transferForm = new FormGroup({
     toAccountForm: new FormControl<IBankAccount['id']>(0, Validators.required),
-    fromAccountForm: new FormControl<IBankAccount['id']>(0 , Validators.required),
+    fromAccountForm: new FormControl<IBankAccount['id']>(0, Validators.required),
     ammountForm: new FormControl<number>(0.00, [Validators.required, Validators.min(0.01)])
   });
 
 
   constructor(private fb: FormBuilder,
               private bankAccountService: BankAccountService,
-              protected activatedRoute: ActivatedRoute) {}
+              protected activatedRoute: ActivatedRoute) {
+  }
 
 
   ngOnInit(): void { // when it routs, its gets the bank account user from whoerver is logged in
@@ -38,42 +39,5 @@ export class UserTransferComponent implements OnInit {
   }
 
 
-  ngOnInit(): void { // when it routs, its gets the bank account user from whoerver is logged in
-// Fetch user's accounts from your service
-    // Replace this with your actual code to fetch accounts
-    // this.bankAccountService.getUserAccounts().subscribe((accounts) => {
-    //   this.accounts = accounts;
-    // });
-    this.activatedRoute.data.subscribe(({ bankUser }) => {
-      this.bankUser = bankUser;
-    });
 
-
-
-    }
-transferMoney() {
-    if (this.transferForm.valid) {
-      console.log("We made it here")
-      // const fromAccount = this.transferForm.get('fromAccount')?.value;
-      // const toAccount = this.transferForm.get('toAccount')?.value;
-      // const amount = this.transferForm.get('amount')?.value;
-
-      console.log(this.toAccount)
-      console.log(this.fromAccount)
-      console.log(this.amount)
-
-      if (this.fromAccount && this.toAccount && this.amount) {
-
-
-
-            console.log('Money transferred successfully.');
-          } else {
-            console.log('Insufficient funds in the source account.');
-          }
-        } else {
-          console.log('Invalid account selection.');
-        }
-      }
-    }
-
-
+}
