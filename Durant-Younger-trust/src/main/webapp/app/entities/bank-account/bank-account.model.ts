@@ -6,8 +6,9 @@ export interface IBankAccount {
   accountName?: string | null;
   balance?: number | null;
   user?: Pick<IBankUser, 'id'> | null;
-  transactions?: Pick<IBankTransaction, 'id'> [] | null;
+  transactions?: IBankTransaction [] | null;
 }
 
 export type NewBankAccount = Omit<IBankAccount, 'id'> & { id: null };
-""
+
+
