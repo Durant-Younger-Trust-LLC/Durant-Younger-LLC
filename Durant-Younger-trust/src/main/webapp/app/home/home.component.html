@@ -35,13 +35,20 @@
   <meta charset="utf-8">
   <title>Accounts</title>
 </head>
+<<<<<<< HEAD
   <body style="background: inherit">
   <h3 class = 'title'>WELCOME TO DURANT & YOUNGER BANKING </h3>
   <p class = 'para'>Select a Banking Action:</p>
+=======
+<body style="background: inherit">
+<h3 class = 'title'>WELCOME TO DURANT & YOUNGER BANKING </h3>
+<p class = 'para'>Select a Banking Action:</p>
+>>>>>>> origin
 
 
 
 
+<<<<<<< HEAD
     <div class="d-flex justify-content-center" style="margin-bottom: 20px;">
       <a class="btn btn-secondary button" routerLink="/user-account">Accounts</a>
     </div>
@@ -57,4 +64,21 @@
   </div>
 
   </body>
+=======
+<div class="d-flex justify-content-center" style="margin-bottom: 20px;">
+  <a class="btn btn-secondary button" routerLink="/user-account">Accounts</a>
+</div>
+<div class="d-flex justify-content-center" style="margin-bottom: 20px;">
+  <a class="btn btn-secondary button" routerLink="/user-account/new">Add New Account</a>
+</div>
+<div class="d-flex justify-content-center" style="margin-bottom: 20px;">
+  <a  *ngIf="bankUser?.id" class="btn btn-secondary button" routerLink="/user-account/{{this.bankUser?.id}}/transfer">Transfer Funds</a>
+  <a  *ngIf="!bankUser?.id" class="btn btn-secondary button" routerLink="/login">Transfer Funds</a>
+</div>
+<div class="d-flex justify-content-center" style="margin-bottom: 20px;">
+  <a class="btn btn-secondary button" routerLink="">Deposit Money</a>
+</div>
+
+</body>
+>>>>>>> origin
 </html>
