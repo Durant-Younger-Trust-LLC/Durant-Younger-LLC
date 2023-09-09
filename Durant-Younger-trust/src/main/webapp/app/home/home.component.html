@@ -2,7 +2,7 @@
 <html>
 <style>
   .title {
-    background: #3d3d3d;
+    background: #a17c07;
     color: #fff;
     padding: 10px;
     font-family: Monaco;
@@ -13,13 +13,20 @@
   }
   .para{
 
-    color: #656363;
-    padding: 30px;
+    color: #595959;
+    padding: 20px;
     font-family: Courier New;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
+    text-shadow: 2px 2px 4px rgb(42, 122, 109);
 
+
+  }
+
+  .button {
+    width: 300px;
+    margin-bottom: 30px;
   }
 
 
@@ -30,14 +37,21 @@
 </head>
   <body>
   <h3 class = 'title'>WELCOME TO DURANT & YOUNGER BANKING </h3>
-  <p class = 'para'>Select a Banking Action</p>
+  <p class = 'para'>Select a Banking Action:</p>
+
 
     <div class="d-flex justify-content-center" style="margin-bottom: 20px;">
-      <a class="btn btn-secondary" routerLink="/user-account/new">Add New Account</a>
+      <a class="btn btn-secondary button" routerLink="/user-account">Accounts</a>
     </div>
     <div class="d-flex justify-content-center" style="margin-bottom: 20px;">
-      <a class="btn btn-secondary" routerLink="/user-account">Accounts</a>
+      <a class="btn btn-secondary button" routerLink="/user-account/new">Add New Account</a>
     </div>
+    <div class="d-flex justify-content-center" style="margin-bottom: 20px;">
+      <a class="btn btn-secondary button" routerLink="/user-account/{{this.bankUser?.id}}/transfer">Transfer Funds</a>
+    </div>
+  <div class="d-flex justify-content-center" style="margin-bottom: 20px;">
+    <a class="btn btn-secondary button" routerLink="">Deposit Money</a>
+  </div>
 
   </body>
 </html>
