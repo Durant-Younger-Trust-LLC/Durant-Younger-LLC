@@ -3,9 +3,9 @@ import { AccountService } from 'app/core/auth/account.service';
 import { Account } from 'app/core/auth/account.model';
 import { BankUserService } from 'app/entities/bank-user/service/bank-user.service';
 import {Subject, switchMap} from "rxjs";
-import {takeUntil} from "rxjs/operators";
+
 import {IBankUser} from "../../bank-user/bank-user.model";
-import {IBankAccount} from "../../bank-account/bank-account.model";
+import {takeUntil} from "rxjs/operators";
 
 @Component({
   selector: 'jhi-user-account-mainpage',
@@ -24,11 +24,10 @@ export class UserAccountMainpageComponent implements OnInit {
 
   ngOnInit(): void {
     this.accountService
-      .getAuthenticationState()
-      .subscribe(data => this.account = data);
-    this.bankUserService
-      .findUserByEmail(this.account?.email)
-      .subscribe(data => this.bankUser = data.body);
+      .getAuthenticationState().pipe(takeUntil(this.destroy$), switchMap(accountcall => {
+        this.account = accountcall;
+        return this.bankUserService.findUserByEmail(this.account?.email);
+    })).subscribe(data => this.bankUser = data.body);
 
   }
 

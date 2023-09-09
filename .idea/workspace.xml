@@ -4,13 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
     <list default="true" id="6c07fef2-d60a-4fba-a1c6-fdd6d199d545" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-transfer/user-transfer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-transfer/user-transfer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-transfer/user-transfer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-transfer/user-transfer.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -34,36 +44,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Surabhi",
-    "last_opened_file_path": "/Users/surabhi/Durant-Younger-Trust-LLC",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+
+
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+
+    &quot;git-widget-placeholder&quot;: &quot;Taylor&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/taylor/LocalProjects/Durant-Younger-Trust-LLC&quot;,
+
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;eec9b165b590e63568a49af412b3baad&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/taylor/LocalProjects/Durant-Younger-Trust-LLC/Durant-Younger-trust/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/content/images" />
+      <recent name="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account" />
+      <recent name="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-account-routing" />
+    </key>
+  </component>
   <component name="RunManager" selected="JavaScript Debug.Angular Application">
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="Angular CLI Server" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/Durant-Younger-trust/package.json" />
@@ -85,10 +99,44 @@
       <option name="presentableId" value="Default" />
       <updated>1693250870872</updated>
       <workItem from="1693250871903" duration="1576000" />
+      <workItem from="1693311818028" duration="1578000" />
+      <workItem from="1693324889422" duration="192000" />
+      <workItem from="1693400564792" duration="1588000" />
+      <workItem from="1693402262774" duration="2099000" />
+      <workItem from="1693410063232" duration="1917000" />
+      <workItem from="1693493724931" duration="1068000" />
+      <workItem from="1693507741399" duration="1881000" />
+      <workItem from="1693509650173" duration="5611000" />
+      <workItem from="1693572467596" duration="3079000" />
+      <workItem from="1693576412503" duration="515000" />
+      <workItem from="1693577954329" duration="4917000" />
+      <workItem from="1693674171940" duration="8601000" />
+      <workItem from="1693839664480" duration="357000" />
+      <workItem from="1693841930035" duration="4178000" />
+      <workItem from="1693937223252" duration="9251000" />
+      <workItem from="1694198470183" duration="5102000" />
     </task>
+    <task id="LOCAL-00004" summary="update 7">
+      <option name="closed" value="true" />
+      <created>1694028264477</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694028264477</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="practice push" />
+    <MESSAGE value="update 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 7" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

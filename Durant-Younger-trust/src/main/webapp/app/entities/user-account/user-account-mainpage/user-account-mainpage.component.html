@@ -5,10 +5,13 @@
       background: teal;
       color: #fff;
       padding: 10px;
-      font-family: sans-serif;
-      margin-right: 40%;
+
+      font-family: Monaco;
+
+
       margin-bottom: 1%;
       margin-top: 2%;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     }
     .button{
       background: gray;
@@ -28,17 +31,27 @@
     <title>Accounts</title>
   </head>
 
-    <body>
-
+  <div class="text-end" style="margin-bottom: 20px;">
+    <a class="btn btn-secondary" routerLink="/user-account/new">Add New Account</a>
+  </div>
+  <div class="text-end">
+    <a class="btn btn-secondary" routerLink="/user-account/{{this.bankUser?.id}}/transfer">Transfer Funds</a>
+  </div>
+  <body>
       <h3 class = 'title'>Accounts</h3>
-      <div class="container.fluid">
+     <div class="container.fluid">
         <div class="row-cols-1" *ngFor="let bAccount of bankUser?.accounts" >
-            <div class = 'button' routerLink="/bank-user">
+            <div class = 'button' routerLink="/user-account/{{bAccount.id}}/view">
               {{bAccount.accountName}} - {{bAccount.id}}<p id="balance">Balance: ${{bAccount.balance}}</p>
             </div>
         </div>
+     </div>
 
-      </div>
+
+
+
+
+
 
     </body>
 </html>
