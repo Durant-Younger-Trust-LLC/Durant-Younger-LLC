@@ -31,13 +31,16 @@
     <title>Accounts</title>
   </head>
 
-  <div class="text-end" style="margin-bottom: 20px;">
-    <a class="btn btn-secondary" routerLink="/user-account/new">Add New Account</a>
+
+  <div class="text-end ">
+    <a class="btn btn-secondary" routerLink = "/user-account/new">Add New Account</a>
   </div>
   <div class="text-end">
     <a class="btn btn-secondary" routerLink="/user-account/{{this.bankUser?.id}}/transfer">Transfer Funds</a>
   </div>
-  <body>
+
+    <body style="background: inherit">
+
       <h3 class = 'title'>Accounts</h3>
      <div class="container.fluid">
         <div class="row-cols-1" *ngFor="let bAccount of bankUser?.accounts" >
@@ -45,15 +48,9 @@
               {{bAccount.accountName}} - {{bAccount.id}}<p id="balance">Balance: ${{bAccount.balance}}</p>
             </div>
         </div>
-     </div>
 
+      </div>
 
-
-
-
-
-
-    </body>
 </html>
 
 
