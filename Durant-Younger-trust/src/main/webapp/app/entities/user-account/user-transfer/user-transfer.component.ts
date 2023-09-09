@@ -18,7 +18,6 @@ export class UserTransferComponent implements OnInit {
   bankUser: IBankUser | null = null;
   validTransfer = true;
   dummyAccount: IBankAccount = {id: 0};
-  //const sleep = (ms) => new Promise(r => setTimeout(r, ms));
   sleep = (ms: number | undefined) => new Promise(r => setTimeout(r, ms));
   transferForm = new FormGroup({
     toAccountForm: new FormControl<IBankAccount>(this.dummyAccount, Validators.required),
@@ -84,7 +83,7 @@ export class UserTransferComponent implements OnInit {
   }
 
   async previousState(): Promise<void> {
-    await this.sleep(1000);
+    await this.sleep(500);
     window.history.back();
   }
 }
