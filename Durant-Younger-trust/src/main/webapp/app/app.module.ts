@@ -29,7 +29,7 @@ import { UserAccountMainpageComponent } from './entities/user-account/user-accou
 import { IndvAccountDetailComponent } from './entities/user-account/indv-account-detail/indv-account-detail.component';
 import { UserTransferComponent } from './entities/user-account/user-transfer/user-transfer.component';
 import { UserAccountNewComponent } from './entities/user-account/user-account-new/user-account-new.component';
-import { HomepageComponent } from './homepage/homepage.component';
+
 
 @NgModule({
   imports: [
@@ -50,7 +50,7 @@ import { HomepageComponent } from './homepage/homepage.component';
     { provide: NgbDateAdapter, useClass: NgbDateDayjsAdapter },
     httpInterceptorProviders,
   ],
-  declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent, HomepageComponent ],
+  declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent ],
   bootstrap: [MainComponent],
 })
 export class AppModule {
