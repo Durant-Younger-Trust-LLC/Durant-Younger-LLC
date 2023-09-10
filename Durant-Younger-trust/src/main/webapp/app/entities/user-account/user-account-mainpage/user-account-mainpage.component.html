@@ -21,10 +21,18 @@
       margin: 10px;
       font-family: sans-serif;
       border-radius: 5px;
+
     }
     #balance{
      text-align: end;
     }
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+
+    }
+
   </style>
   <head>
     <meta charset="utf-8">
@@ -32,12 +40,12 @@
   </head>
 
 
-  <div class="text-end ">
+  <div class="button-container">
+    <a class="btn btn-secondary button" routerLink = "/user-account/new">Add New Account</a>
 
-    <a class="btn btn-secondary" routerLink = "/user-account/new">Add New Account</a>
-  </div>
-  <div class="text-end">
-    <a class="btn btn-secondary" routerLink="/user-account/{{this.bankUser?.id}}/transfer">Transfer Funds</a>
+    <a class="btn btn-secondary button" routerLink="/user-account/{{this.bankUser?.id}}/transfer">Transfer Funds</a>
+
+    <a class="btn btn-secondary button" routerLink="/user-account/{{this.bankUser?.id}}/deposit">Deposit Funds</a>
   </div>
 
     <body style="background: inherit">
@@ -52,10 +60,7 @@
 
       </div>
     </body>
-<<<<<<< HEAD
 
-=======
->>>>>>> origin
 </html>
 
 

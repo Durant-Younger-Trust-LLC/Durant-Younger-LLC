@@ -5,11 +5,12 @@ import {UserAccountMainpageComponent} from './user-account-mainpage/user-account
 import {IndvAccountDetailComponent} from "./indv-account-detail/indv-account-detail.component";
 import {UserTransferComponent} from "./user-transfer/user-transfer.component";
 import {UserAccountNewComponent} from "./user-account-new/user-account-new.component";
+import {UserDepositComponent} from "./user-deposit/user-deposit.component";
 
 
 
 @NgModule({
   imports: [SharedModule, UserAccountRoutingModule ],
-  declarations: [UserAccountMainpageComponent, IndvAccountDetailComponent, UserTransferComponent, UserAccountNewComponent ],
+  declarations: [UserAccountMainpageComponent, IndvAccountDetailComponent, UserTransferComponent, UserAccountNewComponent, UserDepositComponent ],
 })
 export class UserAccountModule {}
