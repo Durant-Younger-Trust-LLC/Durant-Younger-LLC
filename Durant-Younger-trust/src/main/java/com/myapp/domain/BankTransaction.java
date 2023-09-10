@@ -35,6 +35,12 @@ public class BankTransaction implements Serializable {
     @Column(name = "merchant_name")
     private String merchantName;
 
+    @Column(name = "transaction_amount")
+    private Double transactionAmount;
+
+    @Column(name = "type")
+    private String type;
+
     @ManyToOne
     @JsonIgnoreProperties(value = { "transactions", "user" }, allowSetters = true)
     private BankAccount user;
@@ -119,6 +125,21 @@ public class BankTransaction implements Serializable {
         return this;
     }
 
+    public Double getTransactionAmount() {
+        return transactionAmount;
+    }
+
+    public void setTransactionAmount(Double transactionAmount) {
+        this.transactionAmount = transactionAmount;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here
 
     @Override

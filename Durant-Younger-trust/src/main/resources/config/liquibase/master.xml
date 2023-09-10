@@ -26,4 +26,15 @@
     <include file="config/liquibase/changelog/20230828195449_added_entity_constraints_BankTransaction.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
+
+    <changeSet author="taylor (generated)" id="1694371271489-3">
+        <addColumn tableName="bank_transaction">
+            <column name="transaction_amount" type="double"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="taylor (generated)" id="1694371271489-4">
+        <addColumn tableName="bank_transaction">
+            <column name="type" type="varchar(255)"/>
+        </addColumn>
+    </changeSet>
 </databaseChangeLog>
