@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
 
-    <list default="true" id="6c07fef2-d60a-4fba-a1c6-fdd6d199d545" name="Changes" comment="have to work on trnasfer drop down tabs" />
-
     <list default="true" id="6c07fef2-d60a-4fba-a1c6-fdd6d199d545" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/indv-account-detail/indv-account-detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/indv-account-detail/indv-account-detail.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/layouts/navbar/navbar.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/layouts/navbar/navbar.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-account-mainpage/user-account-mainpage.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-account-mainpage/user-account-mainpage.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-account-new/user-account-new.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-account-new/user-account-new.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-transfer/user-transfer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-transfer/user-transfer.component.ts" afterDir="false" />
     </list>
-
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,13 +45,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+
+
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Nigel&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/nigel/Projects/Durant-Younger-LLC&quot;,
+
+    &quot;git-widget-placeholder&quot;: &quot;Taylor&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/taylor/LocalProjects/Durant-Younger-Trust-LLC&quot;,
+
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -62,9 +64,8 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;eec9b165b590e63568a49af412b3baad&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/nigel/Projects/Durant-Younger-LLC/Durant-Younger-trust/node_modules/typescript/lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/taylor/LocalProjects/Durant-Younger-Trust-LLC/Durant-Younger-trust/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -114,31 +115,10 @@
       <workItem from="1693839664480" duration="357000" />
       <workItem from="1693841930035" duration="4178000" />
       <workItem from="1693937223252" duration="9251000" />
-      <workItem from="1694028535685" duration="2165000" />
-    </task>
-    <task id="LOCAL-00001" summary="practice push">
-      <option name="closed" value="true" />
-      <created>1693949459922</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1693949459922</updated>
-    </task>
-    <task id="LOCAL-00002" summary="practice push">
-      <option name="closed" value="true" />
-      <created>1693950017215</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1693950017215</updated>
-    </task>
-    <task id="LOCAL-00003" summary="practice push">
-      <option name="closed" value="true" />
-      <created>1693959550809</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1693959550809</updated>
+      <workItem from="1694198470183" duration="8365000" />
+      <workItem from="1694267843168" duration="42000" />
+      <workItem from="1694268770547" duration="845000" />
+      <workItem from="1694285313961" duration="835000" />
     </task>
     <task id="LOCAL-00004" summary="update 7">
       <option name="closed" value="true" />

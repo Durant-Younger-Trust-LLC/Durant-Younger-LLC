@@ -18,6 +18,7 @@ export class UserAccountNewComponent implements OnInit {
   bankUser: IBankUser | null = null;
   newAccount: NewBankAccount = {id: null};
   createdAccount?: IBankAccount | null;
+  sleep = (ms: number | undefined) => new Promise(r => setTimeout(r, ms));
 
   constructor(
       protected accountService: AccountService,
@@ -49,8 +50,10 @@ export class UserAccountNewComponent implements OnInit {
       }
     }
 
-  previousState(): void {
+  async previousState(): Promise<void> {
+    await this.sleep(500);
     window.history.back();
+
   }
 }
 

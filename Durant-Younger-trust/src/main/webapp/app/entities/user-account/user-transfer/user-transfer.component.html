@@ -1,27 +1,28 @@
 <div class="text-center">
   <h1 class="panel-title">Transfer Funds</h1>
   <br><br>
-  <form id="new-account-form">
-    <label for="account1-name" class="form-label">Account to withdraw from:</label>
-    <select id="account1-name"  required>
-      <option value="" selected>Select an account</option>
-      <!-- Loop through the accountList to generate options -->
-      <option formControl="fromAccount" *ngFor="let bAccount of bankUser?.accounts" [ngValue]="bAccount">{{ bAccount }}</option>
+
+  <div class="alert alert-danger"  *ngIf="!validTransfer">
+    <span >Invalid transfer amount</span>
+  </div>
+  <form id="new-account-form" [formGroup]="transferForm" (ngSubmit)="sumbit()">
+    <label for="account1-name" >Account to withdraw from:</label>
+    <select id="account1-name" formControlName="fromAccountForm">
+<!--    <option (select)="true" [ngValue]="null">Select an account</option>-->
+      <option  *ngFor="let bAccount of bankUser?.accounts" [ngValue]="bAccount">{{ bAccount.accountName }} ${{bAccount.balance}}</option>
     </select><br><br>
 
-    <label for="account2-name" class="form-label">Account sending funds to:</label>
-    <select id="account2-name"  required>
-      <option value="" disabled selected>Select an account</option>
-      <!-- Loop through the accountList to generate options -->
-      <option formControl="toAccount" *ngFor="let bAccount of bankUser?.accounts" [ngValue]="bAccount">{{ bAccount }}</option>
+    <label for="account2-name" >Account sending funds to:</label>
+    <select id="account2-name" formControlName="toAccountForm">
+<!--      <option (select)="true" [ngValue]="null">Select an account</option>-->
+      <option  *ngFor="let bAccount of bankUser?.accounts" [ngValue]="bAccount">{{ bAccount.accountName }} ${{bAccount.balance}}</option>
     </select><br><br>
 
-    <label for="account2-amount" class="form-label">Amount to be transferred</label>
-    <input formControl="amount" type="number" id="account2-amount" placeholder="Amount"  required><br><br>
-  <p>{{transferForm.status}}</p>
-    <!-- Add the submit button -->
-    <button type="submit" (click)="transferMoney()" class="btn btn-primary">Submit</button>
-
+    <label for="account2-amount" >Amount to be transferred</label>
+    <input formControlName="amountForm" type="number" id="account2-amount" placeholder="Amount"  required><br><br>
+    <p>{{transferForm.status}}</p>
+    <p></p>
+    <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 
 </div>

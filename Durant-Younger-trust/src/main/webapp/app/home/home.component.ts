@@ -5,6 +5,8 @@ import { takeUntil } from 'rxjs/operators';
 
 import { AccountService } from 'app/core/auth/account.service';
 import { Account } from 'app/core/auth/account.model';
+import {BankUserService} from "../entities/bank-user/service/bank-user.service";
+import {IBankUser} from "../entities/bank-user/bank-user.model";
 
 @Component({
   selector: 'jhi-home',
@@ -13,16 +15,30 @@ import { Account } from 'app/core/auth/account.model';
 })
 export class HomeComponent implements OnInit, OnDestroy {
   account: Account | null = null;
+  bankUser: IBankUser | null = null;
 
   private readonly destroy$ = new Subject<void>();
 
-  constructor(private accountService: AccountService, private router: Router) {}
+  constructor(private accountService: AccountService, private router: Router,private bankUserService: BankUserService) {}
 
   ngOnInit(): void {
     this.accountService
       .getAuthenticationState()
       .pipe(takeUntil(this.destroy$))
-      .subscribe(account => (this.account = account));
+      .subscribe(account => {
+        this.account = account;
+        if (this.account) {
+          this.callBankUserByEmail(this.account.email);
+        }
+      });
+  }
+
+  callBankUserByEmail(email:string | undefined): void {
+    if (email) {
+      this.bankUserService.findUserByEmail(email).subscribe(data => {
+        this.bankUser = data.body;
+      });
+    }
   }
 
   login(): void {

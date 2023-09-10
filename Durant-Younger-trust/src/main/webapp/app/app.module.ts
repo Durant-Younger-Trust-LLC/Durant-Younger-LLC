@@ -30,6 +30,7 @@ import { IndvAccountDetailComponent } from './entities/user-account/indv-account
 import { UserTransferComponent } from './entities/user-account/user-transfer/user-transfer.component';
 import { UserAccountNewComponent } from './entities/user-account/user-account-new/user-account-new.component';
 
+
 @NgModule({
   imports: [
     BrowserModule,
