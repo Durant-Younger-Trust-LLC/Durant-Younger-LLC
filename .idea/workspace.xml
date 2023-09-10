@@ -6,15 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6c07fef2-d60a-4fba-a1c6-fdd6d199d545" name="Changes" comment="have to work on trnasfer drop down tabs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/homepage/homepage.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/homepage/homepage.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/homepage/homepage.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-account-mainpage/user-account-mainpage.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-account-mainpage/user-account-mainpage.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-account-routing/user-account-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-account-routing/user-account-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-account.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/entities/user-account/user-account.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/webapp/app/home/home.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
