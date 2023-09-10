@@ -1,0 +1,23 @@
+<div class="text-center">
+  <h1 class="panel-title">Deposit Funds</h1>
+  <br><br>
+
+  <div class="alert alert-danger"  *ngIf="!validTransfer">
+    <span >Invalid transfer amount</span>
+  </div>
+  <form id="new-account-form" [formGroup]="transferForm" (ngSubmit)="sumbit()">
+
+    <label for="account2-name" >Account depositing funds to:</label>
+    <select id="account2-name" formControlName="toAccountForm">
+      <!--      <option (select)="true" [ngValue]="null">Select an account</option>-->
+      <option  *ngFor="let bAccount of bankUser?.accounts" [ngValue]="bAccount">{{ bAccount.accountName }} ${{bAccount.balance}}</option>
+    </select><br><br>
+
+    <label for="account2-amount" >Amount to be deposited</label>
+    <input formControlName="amountForm" type="number" id="account2-amount" placeholder="Amount"  required><br><br>
+    <p>{{transferForm.status}}</p>
+    <p></p>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+</div>

@@ -10,6 +10,7 @@ import {IndvAccountRoutingResolveService} from "./indv-account-routing-resolve.s
 import {UserAccountNewComponent} from "../user-account-new/user-account-new.component";
 import {UserTransferComponent} from "../user-transfer/user-transfer.component";
 import {BankUserRoutingResolveService} from "../../bank-user/route/bank-user-routing-resolve.service";
+import {UserDepositComponent} from "../user-deposit/user-deposit.component";
 
 const bankTransactionRoute: Routes = [
   {
@@ -44,6 +45,17 @@ const bankTransactionRoute: Routes = [
     },
   canActivate: [UserRouteAccessService],
   },
+
+  {
+    path: ':id/deposit',
+    component: UserDepositComponent,
+    resolve: {
+      bankUser: BankUserRoutingResolveService,
+    },
+    canActivate: [UserRouteAccessService],
+  },
+
+
 
 
 
