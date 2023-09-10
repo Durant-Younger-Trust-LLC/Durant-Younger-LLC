@@ -8,6 +8,8 @@ export interface IBankTransaction {
   balance?: number | null;
   merchantName?: string | null;
   user?: Pick<IBankAccount, 'id'> | null;
+  transactionAmount?: number | null;
+  type?: string | null;
 }
 
 export type NewBankTransaction = Omit<IBankTransaction, 'id'> & { id: null };

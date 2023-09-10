@@ -72,10 +72,10 @@ export class UserTransferComponent implements OnInit {
         toAccount.balance = toAccount.balance + amount;
       }
       let receivingTransaction: NewBankTransaction =  { id:null, merchantName: "Internal Transfer",
-        user: toAccount, balance: amount,
+        user: toAccount, balance: toAccount.balance, type: 'Deposit', transactionAmount: amount,
         description: "transfer from " + fromAccount.accountName + " to " + toAccount.accountName, date: currentDate};
       let sendingTransaction: NewBankTransaction =  { id:null, merchantName: "Internal Transfer",
-        user: fromAccount, balance: -amount,
+        user: fromAccount, balance: fromAccount.balance, type: 'Withdraw', transactionAmount: -amount,
         description: "transfer from " + fromAccount.accountName + " to " + toAccount.accountName, date: currentDate};
       this.bankAccountService.partialUpdate(fromAccount).subscribe(data => data.body);
       this.bankAccountService.partialUpdate(toAccount).subscribe(data => data.body);
