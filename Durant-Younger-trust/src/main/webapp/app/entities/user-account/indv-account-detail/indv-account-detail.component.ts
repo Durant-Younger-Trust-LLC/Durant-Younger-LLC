@@ -24,12 +24,6 @@ export class IndvAccountDetailComponent implements OnInit {
     this.activatedRoute.data.subscribe(({ bankAccount }) => {
       this.bankAccount = bankAccount;
 
-      // //adding stuff
-      // //will this populate array??
-      // if(bankAccount?.transactions) {
-      //   this.transactions =bankAccount.transactions;
-      //
-     // }
 
 
     });
