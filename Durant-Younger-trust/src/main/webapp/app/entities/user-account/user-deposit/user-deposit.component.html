@@ -15,9 +15,11 @@
 
     <label for="account2-amount" >Amount to be deposited</label>
     <input formControlName="amountForm" type="number" id="account2-amount" placeholder="Amount"  required><br><br>
-    <p>{{transferForm.status}}</p>
     <p></p>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button class="btn btn-outline-secondary" (click)="previousState()">
+      Back
+    </button>
+    <button type="submit" [disabled]="transferForm.invalid" class="btn btn-primary">Submit</button>
   </form>
 
 </div>
