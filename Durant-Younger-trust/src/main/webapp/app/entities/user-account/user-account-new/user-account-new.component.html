@@ -6,8 +6,8 @@
     <input id="account-name" placeholder="Type Account Name" required #accountName><br><br>
 
 
-
-    <a class="btn btn-primary text-end" (click)="add(accountName.value); accountName.value = ''">Submit</a>
+    <button class="btn btn-outline-secondary" (click)="previousState()">Back</button>
+    <button class="btn btn-primary text-end" (click)="add(accountName.value); accountName.value = ''">Submit</button>
   </form>
 
 </div>

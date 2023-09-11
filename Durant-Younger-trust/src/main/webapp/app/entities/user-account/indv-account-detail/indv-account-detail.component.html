@@ -39,12 +39,12 @@
 
 </style>
 
-<head>
+<head >
     <meta charset="utf-8">
     <title>Account Details</title>
 </head>
 
-    <body>
+    <body >
         <h3 class ='title'> {{bankAccount?.accountName}} Activity</h3><br>
 
             <p class = 'para'> Available Balance: ${{bankAccount?.balance}}</p>
@@ -73,8 +73,8 @@
                 <td>{{transaction?.description}}</td>
 <!--                <td>{{transaction?.merchantName}}</td>-->
                 <td>{{transaction?.type}}</td>
-                <td> {{transaction?.transactionAmount}}</td>
-                <td>{{transaction?.balance}}</td>
+                <td> ${{transaction?.transactionAmount}}</td>
+                <td>${{transaction?.balance}}</td>
 
 
             </tr>
@@ -88,6 +88,8 @@
 
 
     </body>
+<button class="btn btn-outline-secondary" (click)="previousState()">Back</button>
+
 
 
 <p></p>
