@@ -72,7 +72,9 @@ export class UserDepositComponent implements OnInit {
       id:null,
         merchantName: "Deposit",
         user: toAccount,
-        balance: amount,
+        balance: toAccount.balance,
+        type: 'Deposit',
+        transactionAmount:amount,
         description:  " Deposit to " + toAccount.accountName, date: currentDate};
 
       this.bankAccountService.partialUpdate(toAccount).subscribe(data => data.body);
