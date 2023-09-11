@@ -57,10 +57,12 @@
                 <th scope="col">ID</th>
                 <th scope="col">Date</th>
                 <th scope="col">Description</th>
-                <th scope="col">Withdrawls</th>
-                <th scope="col">Deposit</th>
+<!--                <th scope="col">Merchant</th>-->
+                <th scope="col">Type</th>
+                <th scope="col">Amount</th>
+
                 <th scope="col">Balance</th>
-                <th scope="col">Merchant Name</th>
+
             </tr>
             </thead>
             <tbody >
@@ -69,8 +71,12 @@
                 <td>{{transaction?.id}}</td>
                 <td>{{transaction?.date}}</td>
                 <td>{{transaction?.description}}</td>
+<!--                <td>{{transaction?.merchantName}}</td>-->
+                <td>{{transaction?.type}}</td>
+                <td> {{transaction?.transactionAmount}}</td>
                 <td>{{transaction?.balance}}</td>
-                <td>{{transaction?.merchantName}}</td>
+
+
             </tr>
 
             </tbody>

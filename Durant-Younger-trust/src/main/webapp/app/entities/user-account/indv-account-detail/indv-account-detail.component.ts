@@ -22,6 +22,9 @@ export class IndvAccountDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.data.subscribe(({ bankAccount }) => {
+
+      bankAccount.transactions.reverse();
+
       this.bankAccount = bankAccount;
 
 
