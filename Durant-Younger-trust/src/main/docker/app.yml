@@ -28,3 +28,15 @@ services:
     ports:
       - 127.0.0.1:3306:3306
     command: mysqld --lower_case_table_names=1 --skip-ssl --character_set_server=utf8mb4 --explicit_defaults_for_timestamp
+#  dytrustllc-postgresql:
+#    image: postgres:14.5
+#    # volumes:
+#    #   - ~/volumes/jhipster/DYTrustLLC/postgresql/:/var/lib/postgresql/data/
+#    environment:
+#      - POSTGRES_USER=DYTrustLLC
+#      - POSTGRES_PASSWORD=
+#      - POSTGRES_HOST_AUTH_METHOD=trust
+#    # If you want to expose these ports outside your dev PC,
+#    # remove the "127.0.0.1:" prefix
+#    ports:
+#      - 127.0.0.1:5432:5432
