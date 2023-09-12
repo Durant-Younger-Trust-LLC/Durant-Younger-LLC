@@ -28,7 +28,7 @@
     "clean-www": "rimraf target/classes/static/app/{src,target/}",
     "cleanup": "rimraf target/classes/static/",
     "docker:app:up": "docker-compose -f src/main/docker/app.yml up -d",
-    "docker:db:await": "echo \"Waiting for MySQL to start\" && wait-on -t 180000 tcp:3306 && sleep 20 && echo \"MySQL started\"",
+    "docker:db:await": "echo \"Waiting for MySQL to start\" && wait-on -t 180000 tcp:3366 && sleep 20 && echo \"MySQL started\"",
     "docker:db:down": "docker-compose -f src/main/docker/mysql.yml down -v",
     "docker:db:up": "docker-compose -f src/main/docker/mysql.yml up -d",
     "docker:others:await": "",
