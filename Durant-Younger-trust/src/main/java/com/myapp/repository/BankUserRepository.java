@@ -30,7 +30,7 @@ public interface BankUserRepository extends JpaRepository<BankUser, Long> {
         value = "select distinct bankUser from BankUser bankUser left join fetch bankUser.internalUser",
         countQuery = "select count(distinct bankUser) from BankUser bankUser"
     )
-    Page<BankUser> findAllWithToOneRelationships(Pageable pageable);
+   Page<BankUser> findAllWithToOneRelationships(Pageable pageable);
 
     @Query("select distinct bankUser from BankUser bankUser left join fetch bankUser.internalUser")
     List<BankUser> findAllWithToOneRelationships();
