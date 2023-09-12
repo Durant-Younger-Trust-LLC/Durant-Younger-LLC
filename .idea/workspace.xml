@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c07fef2-d60a-4fba-a1c6-fdd6d199d545" name="Changes" comment="have to work on trnasfer drop down tabs">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/docker/app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/docker/app.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/docker/config/mysql/my.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/docker/config/mysql/my.cnf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/docker/mysql.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/docker/mysql.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/test/resources/testcontainers/mysql/my.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/test/resources/testcontainers/mysql/my.cnf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
