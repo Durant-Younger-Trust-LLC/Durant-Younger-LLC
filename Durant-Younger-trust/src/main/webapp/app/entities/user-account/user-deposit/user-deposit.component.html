@@ -1,5 +1,20 @@
+<style>
+  .title {
+    background: teal;
+    color: #fff;
+    padding: 10px;
+
+    font-family: Monaco;
+
+
+    margin-bottom: 1%;
+    margin-top: 2%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  }
+</style>
+
 <div class="text-center">
-  <h1 class="panel-title">Deposit Funds</h1>
+  <h1 class="panel-title title">Deposit Funds</h1>
   <br><br>
 
   <div class="alert alert-danger"  *ngIf="!validTransfer">
@@ -7,19 +22,19 @@
   </div>
   <form id="new-account-form" [formGroup]="transferForm" (ngSubmit)="sumbit()">
 
-    <label for="account2-name" >Account depositing funds to:</label>
-    <select id="account2-name" formControlName="toAccountForm">
+    <label for="account2-name" style="font-size: x-large" >Account depositing funds to:</label>
+    <select id="account2-name" style="font-size: x-large" formControlName="toAccountForm">
       <!--      <option (select)="true" [ngValue]="null">Select an account</option>-->
       <option  *ngFor="let bAccount of bankUser?.accounts" [ngValue]="bAccount">{{ bAccount.accountName }} ${{bAccount.balance}}</option>
     </select><br><br>
 
-    <label for="account2-amount" >Amount to be deposited</label>
-    <input formControlName="amountForm" type="number" id="account2-amount" placeholder="Amount"  required><br><br>
+    <label for="account2-amount" style="font-size: x-large">Amount to be deposited</label>
+    <input formControlName="amountForm" type="number" style="font-size: large" id="account2-amount" placeholder="Amount"  required><br><br>
     <p></p>
-    <button class="btn btn-outline-secondary" (click)="previousState()">
+    <button class="btn btn-outline-secondary" style="font-size: x-large" (click)="previousState()">
       Back
     </button>
-    <button type="submit" [disabled]="transferForm.invalid" class="btn btn-primary">Submit</button>
+    <button type="submit" [disabled]="transferForm.invalid" style="font-size: x-large" class="btn btn-primary">Submit</button>
   </form>
 
 </div>

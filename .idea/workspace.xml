@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c07fef2-d60a-4fba-a1c6-fdd6d199d545" name="Changes" comment="have to work on trnasfer drop down tabs">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/docker/app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/docker/app.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/docker/config/mysql/my.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/docker/config/mysql/my.cnf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/main/docker/mysql.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/main/docker/mysql.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Durant-Younger-trust/src/test/resources/testcontainers/mysql/my.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/Durant-Younger-trust/src/test/resources/testcontainers/mysql/my.cnf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +26,7 @@
         <entry key="$PROJECT_DIR$" value="Surabhi" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Durant-Younger-trust" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -52,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Surabhi2",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/nigel/Projects/Durant-Younger-LLC",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -64,7 +59,7 @@
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "eec9b165b590e63568a49af412b3baad",
-    "ts.external.directory.path": "/Users/surabhi/Projects/Durant-Younger-LLC/Durant-Younger-trust/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Users/taylor/LocalProjects/Durant-Younger-Trust-LLC/Durant-Younger-trust/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -130,6 +125,7 @@
       <workItem from="1694028535685" duration="2165000" />
       <workItem from="1694438369200" duration="2565000" />
       <workItem from="1694457567750" duration="1552000" />
+      <workItem from="1694612160632" duration="4528000" />
     </task>
     <task id="LOCAL-00001" summary="practice push">
       <option name="closed" value="true" />
