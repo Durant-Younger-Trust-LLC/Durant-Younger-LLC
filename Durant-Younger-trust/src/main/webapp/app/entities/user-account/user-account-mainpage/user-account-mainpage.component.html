@@ -21,6 +21,7 @@
       margin: 10px;
       font-family: sans-serif;
       border-radius: 5px;
+      font-size: x-large;
 
     }
     #balance{
@@ -41,19 +42,19 @@
 
 
   <div class="button-container">
-    <a class="btn btn-secondary button" routerLink = "/user-account/new">Add New Account</a>
+    <a class="btn btn-secondary " style="font-size: x-large" routerLink = "/user-account/new">Add New Account</a>
 
-    <a class="btn btn-secondary button" routerLink="/user-account/{{this.bankUser?.id}}/transfer">Transfer Funds</a>
+    <a class="btn btn-secondary " style="font-size: x-large" routerLink="/user-account/{{this.bankUser?.id}}/transfer">Transfer Funds</a>
 
-    <a class="btn btn-secondary button" routerLink="/user-account/{{this.bankUser?.id}}/deposit">Deposit Funds</a>
+    <a class="btn btn-secondary " style="font-size: x-large" routerLink="/user-account/{{this.bankUser?.id}}/deposit">Deposit Funds</a>
   </div>
 
     <body style="background: inherit">
 
-      <h3 class = 'title'>Accounts</h3>
+      <h3 class = 'title display-5'>Accounts</h3>
      <div class="container.fluid">
         <div class="row-cols-1" *ngFor="let bAccount of bankUser?.accounts" >
-            <div class = 'button' routerLink="/user-account/{{bAccount.id}}/view">
+            <div class = 'button ' routerLink="/user-account/{{bAccount.id}}/view">
               {{bAccount.accountName}} - {{bAccount.id}}<p id="balance">Balance: ${{bAccount.balance}}</p>
             </div>
         </div>

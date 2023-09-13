@@ -6,7 +6,7 @@
         color: #ffffff;;
         padding: 10px;
         font-family: Monaco;
-        font-size: 23px;
+        /*font-size: 23px;*/
         margin-bottom: 1%;
         margin-top: 2%;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
@@ -16,20 +16,20 @@
 
         color: #656363;
         padding: 10px;
-        font-family: Courier New;
-        font-size: 20px;
+        /*font-family: Courier New;*/
+        /*font-size: 20px;*/
         font-weight: bold;
         text-align: left;
     }
 
     .table {
-        font-family: Courier New;
-
+        /*font-family: Courier New;*/
+        /*font-weight: ;*/
     }
     .table thead {
         background-color: #9ba0a2;
         color: #ffffff;
-        font-size: 18px;
+        /*font-size: 18px;*/
 
     }
 
@@ -41,17 +41,17 @@
 
 <head >
     <meta charset="utf-8">
-    <title>Account Details</title>
+    <title >Account Details</title>
 </head>
 
-    <body >
-        <h3 class ='title'> {{bankAccount?.accountName}} Activity</h3><br>
+    <body style="background: inherit">
+        <h3 class ='title display-5'> {{bankAccount?.accountName}} Activity</h3><br>
 
-            <p class = 'para'> Available Balance: ${{bankAccount?.balance}}</p>
+            <p class = 'para' style="font-size: xx-large"> Available Balance: ${{bankAccount?.balance}}</p>
 
 
 
-        <table class="table">
+        <table class="table" style="font-size: x-large;">
             <thead class="thead">
             <tr>
                 <th scope="col">ID</th>
@@ -67,7 +67,6 @@
             </thead>
             <tbody >
             <tr *ngFor = "let transaction of bankAccount?.transactions" >
-
                 <td>{{transaction?.id}}</td>
                 <td>{{transaction?.date}}</td>
                 <td>{{transaction?.description}}</td>
@@ -75,7 +74,6 @@
                 <td>{{transaction?.type}}</td>
                 <td> ${{transaction?.transactionAmount}}</td>
                 <td>${{transaction?.balance}}</td>
-
 
             </tr>
 
@@ -88,7 +86,7 @@
 
 
     </body>
-<button class="btn btn-outline-secondary" (click)="previousState()">Back</button>
+<button class="btn btn-outline-secondary" style="font-size: x-large" (click)="previousState()">Back</button>
 
 
 

@@ -18,6 +18,7 @@ export class UserAccountNewComponent implements OnInit {
   bankUser: IBankUser | null = null;
   newAccount: NewBankAccount = {id: null};
   createdAccount?: IBankAccount | null;
+
   sleep = (ms: number | undefined) => new Promise(r => setTimeout(r, ms));
 
   constructor(

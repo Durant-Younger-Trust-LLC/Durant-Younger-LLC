@@ -1,13 +1,37 @@
+<style>
+  .title {
+    background: teal;
+    color: #fff;
+    padding: 10px;
+
+    font-family: Monaco;
+
+
+    margin-bottom: 1%;
+    margin-top: 2%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  }
+</style>
+
 <div class="text-center">
-  <h1 class="panel-title">New Account Creation</h1>
+  <h1 class="panel-title title">New Account Creation</h1>
   <br><br>
   <form id="new-account-form">
-    <label for="account-name"  class="form-label" >Account name: </label>
-    <input id="account-name" placeholder="Type Account Name" required #accountName><br><br>
+    <label for="account-name"  class="form-label" style="font-size: x-large" >Account name: </label>
+    <input id="account-name"
+           placeholder="Type Account Name"
+           style="font-size: x-large"
+           required
+           type="text"
+           #accountName ><br><br>
 
 
-    <button class="btn btn-outline-secondary" (click)="previousState()">Back</button>
-    <button class="btn btn-primary text-end" (click)="add(accountName.value); accountName.value = ''">Submit</button>
+    <button class="btn btn-outline-secondary" style="font-size: x-large" (click)="previousState()">Back</button>
+    <button class="btn btn-primary text-end"
+            style="font-size: x-large"
+            (click)="add(accountName.value); accountName.value = ''"
+    >Submit
+    </button>
   </form>
-
 </div>
+
