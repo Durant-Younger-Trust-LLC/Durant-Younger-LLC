@@ -23,6 +23,8 @@ type BankTransactionFormGroupContent = {
   balance: FormControl<IBankTransaction['balance']>;
   merchantName: FormControl<IBankTransaction['merchantName']>;
   user: FormControl<IBankTransaction['user']>;
+  transactionAmount: FormControl<IBankTransaction['transactionAmount']>;
+  type: FormControl<IBankTransaction['type']>;
 };
 
 export type BankTransactionFormGroup = FormGroup<BankTransactionFormGroupContent>;
@@ -47,6 +49,8 @@ export class BankTransactionFormService {
       balance: new FormControl(bankTransactionRawValue.balance),
       merchantName: new FormControl(bankTransactionRawValue.merchantName),
       user: new FormControl(bankTransactionRawValue.user),
+      transactionAmount: new FormControl(bankTransactionRawValue.transactionAmount),
+      type: new FormControl(bankTransactionRawValue.type),
     });
   }
 

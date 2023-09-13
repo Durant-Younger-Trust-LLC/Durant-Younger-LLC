@@ -47,7 +47,7 @@
     <body style="background: inherit">
         <h3 class ='title display-5'> {{bankAccount?.accountName}} Activity</h3><br>
 
-            <p class = 'para' style="font-size: xx-large"> Available Balance: ${{bankAccount?.balance}}</p>
+            <p class = 'para' style="font-size: xx-large"> Available Balance: ${{bankAccount?.balance | number: '1.2-2'}}</p>
 
 
 
@@ -72,8 +72,8 @@
                 <td>{{transaction?.description}}</td>
 <!--                <td>{{transaction?.merchantName}}</td>-->
                 <td>{{transaction?.type}}</td>
-                <td> ${{transaction?.transactionAmount}}</td>
-                <td>${{transaction?.balance}}</td>
+                <td> ${{transaction?.transactionAmount | number: '1.2-2'}}</td>
+                <td>${{transaction?.balance | number: '1.2-2'}}</td>
 
             </tr>
 
