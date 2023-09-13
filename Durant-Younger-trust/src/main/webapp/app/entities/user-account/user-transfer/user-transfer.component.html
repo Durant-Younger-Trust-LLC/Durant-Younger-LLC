@@ -25,13 +25,13 @@
     <label for="account1-name" style="font-size: xx-large">Account to withdraw from:</label>
     <select id="account1-name" style="font-size: xx-large" formControlName="fromAccountForm">
 <!--    <option (select)="true" [ngValue]="null">Select an account</option>-->
-      <option  *ngFor="let bAccount of bankUser?.accounts" [ngValue]="bAccount">{{ bAccount.accountName }} ${{bAccount.balance}}</option>
+      <option  *ngFor="let bAccount of bankUser?.accounts" [ngValue]="bAccount">{{ bAccount.accountName }} ${{bAccount.balance | number: '1.2-2'}}</option>
     </select><br><br>
 
     <label for="account2-name" style="font-size: xx-large" >Account sending funds to:</label>
     <select id="account2-name" style="font-size: xx-large" formControlName="toAccountForm">
 <!--      <option (select)="true" [ngValue]="null">Select an account</option>-->
-      <option  *ngFor="let bAccount of bankUser?.accounts" [ngValue]="bAccount">{{ bAccount.accountName }} ${{bAccount.balance}}</option>
+      <option  *ngFor="let bAccount of bankUser?.accounts" [ngValue]="bAccount">{{ bAccount.accountName }} ${{bAccount.balance| number: '1.2-2'}}</option>
     </select><br><br>
 
     <label for="account2-amount" style="font-size: xx-large" >Amount to be transferred</label>

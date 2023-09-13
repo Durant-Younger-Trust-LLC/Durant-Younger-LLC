@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c07fef2-d60a-4fba-a1c6-fdd6d199d545" name="Changes" comment="have to work on trnasfer drop down tabs">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +124,7 @@
       <workItem from="1694028535685" duration="2165000" />
       <workItem from="1694438369200" duration="2565000" />
       <workItem from="1694457567750" duration="1552000" />
-      <workItem from="1694612160632" duration="4528000" />
+      <workItem from="1694612160632" duration="7446000" />
     </task>
     <task id="LOCAL-00001" summary="practice push">
       <option name="closed" value="true" />
